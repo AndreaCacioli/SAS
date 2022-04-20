@@ -326,7 +326,7 @@ fg=red</panel_attributes>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
-m2=1..n
+m2=0..n
 viene svolto v
 fg=red</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;140.0;160.0;140.0</additional_attributes>
@@ -356,7 +356,7 @@ fg=red</panel_attributes>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
-m2=1..n
+m2=0..n
 contiene &gt;
 fg=red</panel_attributes>
     <additional_attributes>10.0;600.0;10.0;440.0;270.0;440.0;270.0;10.0</additional_attributes>
