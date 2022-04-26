@@ -643,7 +643,8 @@ fg=magenta</panel_attributes>
     <panel_attributes>Istruzione
 --
 fg=magenta
-anticipabile: Sí/No</panel_attributes>
+anticipabile: Sí/No
+Indicazione: Testo</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -713,6 +714,7 @@ fg=magenta
     </coordinates>
     <panel_attributes>Variante
 --
+Nome: Testo
 fg=magenta
 </panel_attributes>
     <additional_attributes/>
