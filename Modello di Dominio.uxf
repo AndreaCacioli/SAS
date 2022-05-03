@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<diagram program="umlet" version="15.0.0">
   <help_text/>
   <zoom_level>7</zoom_level>
   <element>
@@ -96,17 +96,17 @@ informazioni</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>448</x>
-      <y>98</y>
-      <w>119</w>
-      <h>112</h>
+      <x>427</x>
+      <y>91</y>
+      <w>140</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=0..n
 contiene ^
 fg=blue</panel_attributes>
-    <additional_attributes>10.0;140.0;10.0;10.0;150.0;10.0</additional_attributes>
+    <additional_attributes>40.0;150.0;40.0;20.0;180.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -320,9 +320,9 @@ fg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>735</x>
+      <x>714</x>
       <y>833</y>
-      <w>126</w>
+      <w>147</w>
       <h>119</h>
     </coordinates>
     <panel_attributes>lt=-
@@ -330,7 +330,7 @@ m1=0..n
 m2=0..n
 viene svolto v
 fg=red</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;140.0;160.0;140.0</additional_attributes>
+    <additional_attributes>40.0;10.0;40.0;140.0;190.0;140.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -412,10 +412,10 @@ fg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>147</x>
-      <y>259</y>
-      <w>259</w>
-      <h>203</h>
+      <x>140</x>
+      <y>252</y>
+      <w>266</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -423,7 +423,7 @@ m2=0..n
 Proprietario di ^
 fg=red
 </panel_attributes>
-    <additional_attributes>10.0;270.0;10.0;10.0;350.0;10.0</additional_attributes>
+    <additional_attributes>20.0;280.0;20.0;20.0;360.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
