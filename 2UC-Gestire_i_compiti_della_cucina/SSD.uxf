@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.0.0">
+<diagram program="umlet" version="14.3.0">
   <zoom_level>9</zoom_level>
   <element>
     <id>UMLActor</id>
@@ -205,7 +205,7 @@ bg=#B8E0E0</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-5. aggiungiCompito(procedura, cuoco?, turno?)</panel_attributes>
+5. assegnaCompito(procedura, cuoco?, turno?)</panel_attributes>
     <additional_attributes>10.0;20.0;920.0;20.0</additional_attributes>
   </element>
   <element>
