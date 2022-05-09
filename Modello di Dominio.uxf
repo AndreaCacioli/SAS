@@ -770,8 +770,8 @@ fg=magenta</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1547</x>
-      <y>560</y>
+      <x>1841</x>
+      <y>546</y>
       <w>140</w>
       <h>49</h>
     </coordinates>
@@ -783,32 +783,17 @@ fg=magenta</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1099</x>
-      <y>574</y>
-      <w>462</w>
-      <h>35</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=0..n
-m2=0..n
-utilizza &gt;
-fg=magenta</panel_attributes>
-    <additional_attributes>10.0;20.0;640.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
       <x>1575</x>
-      <y>602</y>
+      <y>588</y>
       <w>63</w>
-      <h>98</h>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
-m2=0..n
+m2=1..n
 utilizza ^
 fg=magenta</panel_attributes>
-    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -891,5 +876,35 @@ m2=0..n
 é composta da ^
 fg=magenta</panel_attributes>
     <additional_attributes>260.0;10.0;10.0;10.0;10.0;200.0;980.0;200.0;980.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1540</x>
+      <y>546</y>
+      <w>140</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Quantitá
+--
+valore: Numero
+unitá di misura: testo
+fg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1673</x>
+      <y>560</y>
+      <w>182</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+impiega &gt;
+fg=magenta</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
   </element>
 </diagram>
