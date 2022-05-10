@@ -643,7 +643,6 @@ fg=magenta</panel_attributes>
     <panel_attributes>Istruzione
 --
 fg=magenta
-anticipabile: Sí/No
 Indicazione: Testo</panel_attributes>
     <additional_attributes/>
   </element>
@@ -658,7 +657,7 @@ Indicazione: Testo</panel_attributes>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=0..n
-contiene v
+puó anticipare &gt;
 fg=magenta</panel_attributes>
     <additional_attributes>10.0;20.0;560.0;20.0;560.0;110.0</additional_attributes>
   </element>
@@ -906,5 +905,35 @@ m2=1
 impiega &gt;
 fg=magenta</panel_attributes>
     <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1036</x>
+      <y>644</y>
+      <w>434</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..n
+deve eseguire sul posto &gt;
+fg=magenta</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;600.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>266</y>
+      <w>196</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..n
+usa &gt;
+fg=magenta</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;20.0;240.0;20.0;240.0;90.0</additional_attributes>
   </element>
 </diagram>
