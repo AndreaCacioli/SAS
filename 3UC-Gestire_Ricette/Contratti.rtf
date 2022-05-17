@@ -1,0 +1,175 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Georgia-Bold;\f1\fnil\fcharset0 Georgia;\f2\fnil\fcharset0 Georgia-Italic;
+\f3\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid202\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid301\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid302\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\paperw11900\paperh16840\margl850\margr850\margb1134\margt1134\vieww33600\viewh21000\viewkind1
+\deftab720
+\pard\pardeftab720\ri-6\sl276\slmult1\sb400\sa120\qj\partightenfactor0
+
+\f0\b\fs40 \cf0 Contratti per lo UC \'93Gestire Le Ricette\'94\
+\pard\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+
+\fs22 \cf0 Pre-condizione generale:
+\f1\b0  l\'92attore \'e8 identificato con un\'92istanza 
+\f2\i c
+\f1\i0  di Cuciniere\
+\
+
+\f0\b 1.creaProcedura(\ul nome:\ulnone   Testo)\
+Pre-Condizioni: 
+\f1\b0 Non esiste nessuna procedura pr che si trova in Ricettario in cui pr.nome = 
+\f2\i nome
+\f0\i0\b \
+Post-Condizioni: \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl276\slmult1\qj\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	\uc0\u8226 	}
+\f1\b0 \'c9 stata creata una procedura p\
+{\listtext	\uc0\u8226 	}p.nome = 
+\f2\i nome\
+\ls1\ilvl0
+\f1\i0 {\listtext	\uc0\u8226 	}p.stato = bozza\
+{\listtext	\uc0\u8226 	}p 
+\f0\b si trova nel
+\f1\b0  Ricettario\
+\pard\tx566\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+\cf0 \
+
+\f0\b 1a.caricaProcedura(\ul nome\ulnone : Testo)\
+\pard\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+\cf0 Pre-Condizioni: --\
+Post-Condizioni: \
+
+\f1\b0 Se c 
+\f0\b \'e9 proprietario della 
+\f1\b0 procedura p che 
+\f0\b si trova
+\f1\b0  nel ricettario e p.nome = 
+\f2\i nome:\
+	
+\f1\i0 p \'e9 stata caricata ed \'e9 modificabile dall\'92attore
+\f2\i .
+\f0\i0\b \
+\
+\pard\tx566\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+\cf0 1b.svuotaProcedura(\ul nome\ulnone : Testo)\
+\pard\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+\cf0 Pre-Condizioni: \'97\
+Post-Condizioni: \
+
+\f1\b0 Se c 
+\f0\b \'e9 proprietario della 
+\f1\b0 procedura p che 
+\f0\b si trova
+\f1\b0  nel ricettario e p.nome = 
+\f2\i nome:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl276\slmult1\qj\partightenfactor0
+\ls2\ilvl0
+\f1\i0 \cf0 {\listtext	\uc0\u8226 	}p non 
+\f0\b pu\'f3 anticipare
+\f1\b0  nulla \
+{\listtext	\uc0\u8226 	}p non
+\f0\b  deve eseguire sul posto
+\f1\b0  nulla\
+\pard\tx566\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+\cf0 \
+\
+\pard\tx566\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+
+\f0\b \cf0 1c.copiaProcedura(\ul nome\ulnone : Testo)\
+\pard\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+\cf0 Pre-Condizioni: \'97\
+Post-Condizioni: \
+
+\f1\b0 Se esiste una procedura p nel Ricettario tale che p.nome = 
+\f2\i nome:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl276\slmult1\qj\partightenfactor0
+\ls3\ilvl0
+\f1\i0 \cf0 {\listtext	\uc0\u8226 	}\'c9 stata creata una procedura q \
+{\listtext	\uc0\u8226 	}q.nome = 
+\f2\i nome
+\f1\i0  + \'93-copy\'94\
+{\listtext	\uc0\u8226 	}q.stato = bozza\
+{\listtext	\uc0\u8226 	}q.autore = p.autore\
+{\listtext	\uc0\u8226 	}c 
+\f0\b \'e9 proprietario di
+\f1\b0  q\
+{\listtext	\uc0\u8226 	}q.descrizione = p.descrizione\
+{\listtext	\uc0\u8226 	}q.note = p.note\
+{\listtext	\uc0\u8226 	}q.tag = p.tag\
+{\listtext	\uc0\u8226 	}q.tempoConcreto = p.tempoConcreto\
+{\listtext	\uc0\u8226 	}q.tempoTotale = p.tempoTotale\
+{\listtext	\uc0\u8226 	}q.tempoUltimazione = p.tempoUltimazione\
+{\listtext	\uc0\u8226 	}q.dosi = p.dosi\
+{\listtext	\uc0\u8226 	}Per ogni istruzione i:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl276\slmult1\qj\partightenfactor0
+\ls3\ilvl1\cf0 {\listtext	
+\f3 \uc0\u8259 
+\f1 	}Se p 
+\f0\b pu\'f3 anticipare
+\f1\b0  i, allora q 
+\f0\b pu\'f3 anticipare
+\f1\b0  i\
+{\listtext	
+\f3 \uc0\u8259 
+\f1 	}Se q 
+\f0\b deve eseguire sul posto
+\f1\b0  i, allora 
+\f0\b deve eseguire sul posto 
+\f1\b0 i\
+\pard\tx566\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+\cf0 \
+\
+//////DA FINIRE//////\
+\pard\tx566\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+
+\f0\b \cf0 1d.ritiraProcedura(\ul nome\ulnone : Testo)\
+\pard\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+\cf0 Pre-Condizioni: 
+\f1\b0 c 
+\f0\b \'e9 proprietario della 
+\f1\b0 procedura p che 
+\f0\b si trova
+\f1\b0  nel ricettario e p.nome = 
+\f2\i nome
+\f0\i0\b \
+Post-Condizioni: 
+\f1\b0 \
+\pard\tx566\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+\cf0 \
+\
+\
+
+\f0\b 2.consultaRicettario()
+\f1\b0 \
+
+\f0\b Pre-Condizioni:
+\f1\b0  \'97\
+
+\f0\b Post-Condizioni: 
+\f1\b0 \'97\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl276\slmult1\qj\partightenfactor0
+\ls4\ilvl1\cf0 \
+\pard\tx566\tx1133\pardeftab720\ri-6\sl276\slmult1\qj\partightenfactor0
+
+\f0\b \cf0 3.creaIstruzioneDiBase(\ul ingredienti\ulnone : Quantit\'e1, \ul indicazione\ulnone : Testo)\
+Pre-Condizioni: \
+Post-Condizioni:\
+\pard\tx220\tx720\tx1133\pardeftab720\li720\fi-720\ri-6\sl276\slmult1\qj\partightenfactor0
+\ls5\ilvl0
+\f1\b0 \cf0 {\listtext	\uc0\u8226 	}\'c9 stata creata una istruzione i\
+{\listtext	\uc0\u8226 	}i 
+\f0\b utilizza
+\f1\b0  
+\f2\i ingredienti
+\f1\i0 \
+{\listtext	\uc0\u8226 	}i.indicazione = 
+\f2\i indicazione
+\f1\i0 \
+}

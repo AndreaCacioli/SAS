@@ -643,7 +643,7 @@ fg=magenta</panel_attributes>
     <panel_attributes>Istruzione
 --
 fg=magenta
-Indicazione: Testo</panel_attributes>
+indicazione: Testo</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -678,7 +678,7 @@ lw=0</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1232</x>
+      <x>1169</x>
       <y>910</y>
       <w>140</w>
       <h>49</h>
@@ -811,14 +811,14 @@ fg=magenta
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1295</x>
+      <x>1232</x>
       <y>847</y>
-      <w>98</w>
+      <w>161</w>
       <h>77</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;
 fg=magenta</panel_attributes>
-    <additional_attributes>10.0;90.0;10.0;60.0;120.0;60.0;120.0;10.0</additional_attributes>
+    <additional_attributes>10.0;90.0;10.0;60.0;210.0;60.0;210.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -935,5 +935,34 @@ m2=0..n
 usa &gt;
 fg=magenta</panel_attributes>
     <additional_attributes>10.0;90.0;10.0;20.0;240.0;20.0;240.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1302</x>
+      <y>924</y>
+      <w>126</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..n
+m2=0..1
+&lt; contiene
+fg=magenta</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1295</x>
+      <y>448</y>
+      <w>133</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Nel ricettario non sono 
+presenti due procedure 
+con lo stesso nome
+bg=yellow</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
