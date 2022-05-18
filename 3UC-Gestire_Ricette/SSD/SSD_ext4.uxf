@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>9</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>378</x>
-      <y>117</y>
-      <w>72</w>
-      <h>99</h>
+      <x>296</x>
+      <y>104</y>
+      <w>64</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>Cuciniere</panel_attributes>
     <additional_attributes/>
@@ -15,32 +15,32 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>855</x>
-      <y>180</y>
-      <w>27</w>
-      <h>1503</h>
+      <x>720</x>
+      <y>160</y>
+      <w>24</w>
+      <h>1032</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1650.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1270.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>198</y>
-      <w>27</w>
-      <h>1494</h>
+      <x>320</x>
+      <y>176</y>
+      <w>24</w>
+      <h>1016</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1640.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1250.0</additional_attributes>
   </element>
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>810</x>
-      <y>144</y>
-      <w>99</w>
-      <h>45</h>
+      <x>680</x>
+      <y>128</y>
+      <w>88</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>System</panel_attributes>
     <additional_attributes/>
@@ -48,22 +48,23 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>234</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>208</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-1. creaProcedura( nome )</panel_attributes>
+1. creaProcedura( nome )
+fg=gray</panel_attributes>
     <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>864</y>
-      <w>477</w>
-      <h>45</h>
+      <x>320</x>
+      <y>264</y>
+      <w>424</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 2. consultaRicettario( )
@@ -74,10 +75,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>900</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>296</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 Procedure del ricettario
@@ -87,10 +88,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>954</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>344</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 3. creaIstruzioneDiBase ( ingredienti, indicazione )
@@ -100,10 +101,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>990</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>376</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 Istruzione creata
@@ -113,36 +114,34 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1035</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>416</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-4. assegnaIstruzioneAnticipabile ( )
-fg=gray</panel_attributes>
+4. assegnaIstruzioneAnticipabile ( )</panel_attributes>
     <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1071</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>448</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-ok
-fg=gray</panel_attributes>
+ok</panel_attributes>
     <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1125</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>600</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 5. richiediListaIngredienti ( )
@@ -152,10 +151,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1161</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>632</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 Ingredienti
@@ -165,10 +164,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1206</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>672</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 6. annotaTag ( istruzione )
@@ -178,10 +177,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1242</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>704</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok
@@ -191,10 +190,10 @@ fg=gray</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>378</x>
-      <y>855</y>
-      <w>522</w>
-      <h>81</h>
+      <x>296</x>
+      <y>256</y>
+      <w>464</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>OPT
 fg=gray</panel_attributes>
@@ -203,10 +202,10 @@ fg=gray</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>378</x>
-      <y>945</y>
-      <w>522</w>
-      <h>171</h>
+      <x>296</x>
+      <y>336</y>
+      <w>464</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>LOOP
 fg=gray</panel_attributes>
@@ -215,10 +214,10 @@ fg=gray</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>378</x>
-      <y>1125</y>
-      <w>522</w>
-      <h>72</h>
+      <x>296</x>
+      <y>600</y>
+      <w>464</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>OPT
 fg=gray</panel_attributes>
@@ -227,10 +226,10 @@ fg=gray</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>378</x>
-      <y>1206</y>
-      <w>522</w>
-      <h>72</h>
+      <x>296</x>
+      <y>672</y>
+      <w>464</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>OPT
 fg=gray</panel_attributes>
@@ -239,10 +238,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1323</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>776</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok
@@ -252,10 +251,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1287</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>744</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 7. assegnaNumeroDosi ( istruzione, numeroDosi )
@@ -265,10 +264,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
-      <y>1359</y>
-      <w>495</w>
-      <h>36</h>
+      <x>312</x>
+      <y>808</y>
+      <w>440</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 8. assegnaTempi ( istruzione, tempiConcerti, tempiTotali, tempiUltimazione )
@@ -278,10 +277,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1395</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>840</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok
@@ -291,10 +290,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1431</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>872</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 9. assegnaNote ( istruzione, note )
@@ -304,10 +303,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1467</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>904</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok
@@ -317,10 +316,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1503</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>936</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 10. assegnaDescrizione ( istruzione, descrizione )
@@ -330,10 +329,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1539</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>968</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok
@@ -343,10 +342,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1575</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>1000</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 11. pubblicaProcedura ( )
@@ -356,10 +355,10 @@ fg=gray</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>1611</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>1032</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 ok
@@ -369,10 +368,10 @@ fg=gray</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>378</x>
-      <y>1422</y>
-      <w>522</w>
-      <h>72</h>
+      <x>296</x>
+      <y>864</y>
+      <w>464</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>OPT
 fg=gray</panel_attributes>
@@ -381,10 +380,10 @@ fg=gray</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>378</x>
-      <y>1503</y>
-      <w>522</w>
-      <h>63</h>
+      <x>296</x>
+      <y>936</y>
+      <w>464</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>OPT
 fg=gray</panel_attributes>
@@ -393,173 +392,22 @@ fg=gray</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>378</x>
-      <y>1575</y>
-      <w>522</w>
-      <h>72</h>
+      <x>296</x>
+      <y>1000</y>
+      <w>464</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>OPT
 fg=gray</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLFrame</id>
-    <coordinates>
-      <x>378</x>
-      <y>216</y>
-      <w>522</w>
-      <h>540</h>
-    </coordinates>
-    <panel_attributes>ALT
-fg=#761C8C
-bg=#e7bfff
-lw=2
---
-
-
-
-
--.
-
-
-
-
-
-
-
-
-
--.
-
-
-
-
-
-
-
-
--.
-
-
-
-
-
-
--.
-layer=-1</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>405</x>
-      <y>306</y>
-      <w>477</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-1a.1 caricaProcedura( nome )
-fg=#9E1C8C</panel_attributes>
-    <additional_attributes>510.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>405</x>
-      <y>342</y>
-      <w>477</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-ok
-fg=#9E1C8C</panel_attributes>
-    <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>405</x>
-      <y>441</y>
-      <w>477</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-1b.1 svuotaProcedura( nome )
-fg=#9E1C8C</panel_attributes>
-    <additional_attributes>510.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>405</x>
-      <y>477</y>
-      <w>477</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-ok
-fg=#9E1C8C</panel_attributes>
-    <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>405</x>
-      <y>567</y>
-      <w>477</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-1c.1 copiaProcedura( nome )
-fg=#9E1C8C</panel_attributes>
-    <additional_attributes>510.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>405</x>
-      <y>603</y>
-      <w>477</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-Procedura copiata
-fg=#9E1C8C</panel_attributes>
-    <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>405</x>
-      <y>648</y>
-      <w>477</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-1d.1 ritiraProcedura( nome )
-fg=#9E1C8C</panel_attributes>
-    <additional_attributes>510.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>405</x>
-      <y>684</y>
-      <w>477</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-ok
-fg=#9E1C8C</panel_attributes>
-    <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
+      <x>352</x>
       <y>0</y>
-      <w>396</w>
-      <h>54</h>
+      <w>352</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=center
@@ -573,10 +421,10 @@ bg=#F9FF47</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
-      <y>54</y>
-      <w>396</w>
-      <h>54</h>
+      <x>352</x>
+      <y>48</y>
+      <w>352</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=center
@@ -589,114 +437,63 @@ fontsize=18</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>261</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>232</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-Procedura registrata</panel_attributes>
+Procedura registrata
+fg=gray</panel_attributes>
     <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>405</x>
-      <y>333</y>
-      <w>477</w>
-      <h>81</h>
+      <x>304</x>
+      <y>400</y>
+      <w>440</w>
+      <h>152</h>
     </coordinates>
     <panel_attributes>ALT
-bg=#ffaaaa
+fg=#761C8C
+bg=#e7bfff
+lw=2
 --
 
+
+
+
 -.
-fg=#D3001B
-layer=-1</panel_attributes>
+layer=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>378</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>488</y>
+      <w>424</w>
+      <h>32</h>
     </coordinates>
-    <panel_attributes>lt=&lt;.
-1a.1a.1/1a.1b.1 procedura è già in uso / non è di proprità
-fg=red
+    <panel_attributes>lt=&lt;&lt;&lt;-
+4a.1 assegnaIstruzioneSulPosto( )
+fg=#9E1C8C
 layer=2</panel_attributes>
-    <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>855</x>
-      <y>387</y>
-      <w>18</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>type=termination
-fg=red
-lw=2</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>855</x>
-      <y>387</y>
-      <w>18</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>type=termination
-fg=red
-lw=2</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLFrame</id>
-    <coordinates>
-      <x>405</x>
-      <y>468</y>
-      <w>477</w>
-      <h>81</h>
-    </coordinates>
-    <panel_attributes>ALT
-bg=#ffaaaa
---
-
--.
-fg=#D3001B
-layer=0</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>855</x>
-      <y>522</y>
-      <w>18</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>type=termination
-fg=red
-lw=2</panel_attributes>
-    <additional_attributes/>
+    <additional_attributes>510.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>513</y>
-      <w>477</w>
-      <h>36</h>
+      <x>320</x>
+      <y>520</y>
+      <w>416</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-1b.1a.1/1b.1b.1 procedura è già in uso / non è di proprità
-fg=red
+ok
+fg=#9E1C8C
 layer=2</panel_attributes>
-    <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;500.0;20.0</additional_attributes>
   </element>
 </diagram>

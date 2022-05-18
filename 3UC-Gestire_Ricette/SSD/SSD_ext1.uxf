@@ -408,7 +408,7 @@ fg=gray</panel_attributes>
       <x>378</x>
       <y>216</y>
       <w>522</w>
-      <h>540</h>
+      <h>603</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -612,7 +612,7 @@ bg=#ffaaaa
 
 -.
 fg=#D3001B
-layer=-1</panel_attributes>
+layer=0</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
