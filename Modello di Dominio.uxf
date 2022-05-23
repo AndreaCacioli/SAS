@@ -320,17 +320,17 @@ fg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>714</x>
+      <x>686</x>
       <y>833</y>
-      <w>147</w>
-      <h>119</h>
+      <w>175</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
 m2=0..n
-viene svolto v
+viene svolto &gt;
 fg=red</panel_attributes>
-    <additional_attributes>40.0;10.0;40.0;140.0;190.0;140.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;230.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -389,7 +389,7 @@ fg=red
     <panel_attributes>lt=-
 m1=0..n
 m2=1
-fa parte &gt;
+fa parte v
 
 fg=red</panel_attributes>
     <additional_attributes>10.0;10.0;60.0;10.0;60.0;250.0;100.0;250.0</additional_attributes>
@@ -643,7 +643,7 @@ fg=magenta</panel_attributes>
     <panel_attributes>Istruzione
 --
 fg=magenta
-indicazione: Testo</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -664,8 +664,8 @@ fg=magenta</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1414</x>
-      <y>644</y>
+      <x>1393</x>
+      <y>602</y>
       <w>84</w>
       <h>28</h>
     </coordinates>
@@ -686,7 +686,7 @@ lw=0</panel_attributes>
     <panel_attributes>Istruzione Semplice
 --
 fg=magenta
-</panel_attributes>
+indicazione: Testo</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -714,6 +714,7 @@ fg=magenta
     <panel_attributes>Variante
 --
 Nome: Testo
+
 fg=magenta
 </panel_attributes>
     <additional_attributes/>
@@ -963,6 +964,20 @@ fg=magenta</panel_attributes>
 presenti due procedure 
 con lo stesso nome
 bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1071</x>
+      <y>693</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>{ordered}
+valign=center
+fontsize=18
+lw=0</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
