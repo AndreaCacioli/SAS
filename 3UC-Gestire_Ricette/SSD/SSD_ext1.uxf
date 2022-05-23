@@ -408,7 +408,7 @@ fg=gray</panel_attributes>
       <x>378</x>
       <y>216</y>
       <w>522</w>
-      <h>603</h>
+      <h>585</h>
     </coordinates>
     <panel_attributes>ALT
 fg=#761C8C
@@ -573,15 +573,15 @@ bg=#F9FF47</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
+      <x>387</x>
       <y>54</y>
-      <w>396</w>
+      <w>504</w>
       <h>54</h>
     </coordinates>
     <panel_attributes>valign=center
 halign=center
 Estensioni al passo 1 (1a, 1b, 1c, 1d)
-e relative eccezioni (1a.1a, 1a.1b,1b.1a,1b.1b)
+e relative eccezioni (1a.1a, 1a.1b, 1b.1a, 1b.1b, 1d.1a, 1d.1b)
 lw=0
 fontsize=18</panel_attributes>
     <additional_attributes/>
@@ -698,5 +698,49 @@ lw=2</panel_attributes>
 fg=red
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>405</x>
+      <y>675</y>
+      <w>477</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>ALT
+bg=#ffaaaa
+--
+
+-.
+fg=#D3001B
+layer=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>405</x>
+      <y>720</y>
+      <w>477</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+1d.1a.1/1d.1b.1 procedura è già in uso / non è di proprietà
+fg=red
+layer=2</panel_attributes>
+    <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>855</x>
+      <y>729</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>type=termination
+fg=red
+lw=2</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
