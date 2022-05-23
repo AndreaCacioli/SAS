@@ -428,8 +428,7 @@ bg=#F9FF47</panel_attributes>
     </coordinates>
     <panel_attributes>valign=center
 halign=center
-Estensioni al passo 1 (1a, 1b, 1c, 1d)
-e relative eccezioni (1a.1a, 1a.1b,1b.1a,1b.1b)
+Estensioni al passo 4 (4a)
 lw=0
 fontsize=18</panel_attributes>
     <additional_attributes/>
