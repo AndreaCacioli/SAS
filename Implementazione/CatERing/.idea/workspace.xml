@@ -48,7 +48,7 @@
     <configuration name="CatERingApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CatERingApp" />
       <module name="CatERing" />
-      <option name="VM_PARAMETERS" value="--module-path  $PROJECT_DIR$/../../../../javafx-sdk-18.0.1/lib --add-modules=javafx.controls,javafx.fxml --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED " />
+      <option name="VM_PARAMETERS" value="--module-path $PATH_TO_FX$  --add-modules=javafx.controls,javafx.fxml --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED " />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -71,6 +71,7 @@
       <workItem from="1654011991931" duration="166000" />
       <workItem from="1654014098820" duration="431000" />
       <workItem from="1654015167485" duration="2768000" />
+      <workItem from="1654018298437" duration="115000" />
     </task>
     <servers />
   </component>
@@ -87,6 +88,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
