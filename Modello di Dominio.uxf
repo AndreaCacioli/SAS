@@ -357,12 +357,12 @@ fg=red</panel_attributes>
     <coordinates>
       <x>864</x>
       <y>736</y>
-      <w>304</w>
+      <w>288</w>
       <h>184</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
-m2=0..1
+m2=1
 contiene &gt;
 fg=red</panel_attributes>
     <additional_attributes>10.0;210.0;10.0;50.0;330.0;50.0;330.0;10.0</additional_attributes>
