@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.0.0">
+<diagram program="umlet" version="14.3.0">
   <help_text/>
   <zoom_level>8</zoom_level>
   <element>
@@ -98,17 +98,17 @@ fg=BLUE</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>488</x>
-      <y>104</y>
-      <w>160</w>
-      <h>136</h>
+      <x>512</x>
+      <y>112</y>
+      <w>136</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=0..n
 contiene ^
 fg=blue</panel_attributes>
-    <additional_attributes>40.0;150.0;40.0;20.0;180.0;20.0</additional_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0;150.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -357,12 +357,12 @@ fg=red</panel_attributes>
     <coordinates>
       <x>864</x>
       <y>736</y>
-      <w>296</w>
+      <w>304</w>
       <h>184</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
-m2=0..n
+m2=0..1
 contiene &gt;
 fg=red</panel_attributes>
     <additional_attributes>10.0;210.0;10.0;50.0;330.0;50.0;330.0;10.0</additional_attributes>
@@ -417,10 +417,10 @@ fg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>288</y>
-      <w>304</w>
-      <h>240</h>
+      <x>168</x>
+      <y>296</y>
+      <w>296</w>
+      <h>232</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -428,7 +428,7 @@ m2=0..n
 Proprietario di ^
 
 fg=BLUE</panel_attributes>
-    <additional_attributes>20.0;280.0;20.0;20.0;360.0;20.0</additional_attributes>
+    <additional_attributes>10.0;270.0;10.0;10.0;350.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -960,16 +960,16 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1376</x>
-      <y>864</y>
-      <w>208</w>
-      <h>96</h>
+      <x>1400</x>
+      <y>872</y>
+      <w>184</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..1
 m2=0..1
 é alternativa di &gt;
 fg=magenta</panel_attributes>
-    <additional_attributes>150.0;90.0;40.0;90.0;40.0;20.0;210.0;20.0;210.0;70.0</additional_attributes>
+    <additional_attributes>120.0;80.0;10.0;80.0;10.0;10.0;180.0;10.0;180.0;60.0</additional_attributes>
   </element>
 </diagram>

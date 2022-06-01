@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.0.0">
-  <zoom_level>8</zoom_level>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>5</zoom_level>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
-      <y>264</y>
-      <w>24</w>
-      <h>976</h>
+      <x>195</x>
+      <y>65</y>
+      <w>15</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1200.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;540.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>384</x>
-      <y>232</y>
-      <w>232</w>
-      <h>40</h>
+      <x>270</x>
+      <y>45</y>
+      <w>145</w>
+      <h>25</h>
     </coordinates>
     <panel_attributes>kitchenTaskManager:
 KitchenTaskManager</panel_attributes>
@@ -27,21 +27,21 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>496</x>
-      <y>264</y>
-      <w>24</w>
-      <h>944</h>
+      <x>340</x>
+      <y>65</y>
+      <w>15</w>
+      <h>255</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1160.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;490.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>240</x>
-      <y>216</y>
-      <w>72</w>
-      <h>56</h>
+      <x>180</x>
+      <y>35</y>
+      <w>45</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -49,13 +49,13 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>592</x>
-      <y>160</y>
-      <w>272</w>
-      <h>32</h>
+      <x>400</x>
+      <y>0</y>
+      <w>170</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>halign=center
-*1 openToDoList*
+*1a.1 openToDoList*
 lw=0
 fontsize=20
 </panel_attributes>
@@ -64,10 +64,10 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
-      <y>320</y>
-      <w>256</w>
-      <h>32</h>
+      <x>195</x>
+      <y>100</y>
+      <w>160</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 openToDoList(service)</panel_attributes>
@@ -76,10 +76,10 @@ openToDoList(service)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>664</x>
-      <y>232</y>
-      <w>232</w>
-      <h>40</h>
+      <x>445</x>
+      <y>45</y>
+      <w>145</w>
+      <h>25</h>
     </coordinates>
     <panel_attributes>service:
 Service</panel_attributes>
@@ -88,21 +88,21 @@ Service</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>776</x>
-      <y>264</y>
-      <w>24</w>
-      <h>944</h>
+      <x>515</x>
+      <y>65</y>
+      <w>15</w>
+      <h>305</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1160.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;590.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>496</x>
-      <y>336</y>
-      <w>304</w>
-      <h>32</h>
+      <x>340</x>
+      <y>110</y>
+      <w>190</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 tdl = getToDoList()</panel_attributes>
@@ -111,10 +111,10 @@ tdl = getToDoList()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>496</x>
-      <y>360</y>
-      <w>304</w>
-      <h>32</h>
+      <x>340</x>
+      <y>125</y>
+      <w>190</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 tdl</panel_attributes>
@@ -123,13 +123,77 @@ tdl</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
-      <y>392</y>
-      <w>256</w>
-      <h>32</h>
+      <x>195</x>
+      <y>145</y>
+      <w>160</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 tdl</panel_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>515</x>
+      <y>120</y>
+      <w>10</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>340</x>
+      <y>110</y>
+      <w>10</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>140</x>
+      <y>70</y>
+      <w>445</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>alt 
+fg=#761C8C
+[!user.isChef()]
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+-.
+fontsize=11
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>195</x>
+      <y>185</y>
+      <w>160</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw UseCaseLogicException</panel_attributes>
     <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
 </diagram>

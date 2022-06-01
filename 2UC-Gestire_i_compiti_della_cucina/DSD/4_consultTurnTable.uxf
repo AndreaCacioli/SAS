@@ -1,60 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>10</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
-    <id>Relation</id>
+    <id>UMLClass</id>
     <coordinates>
-      <x>90</x>
-      <y>130</y>
-      <w>30</w>
-      <h>220</h>
+      <x>108</x>
+      <y>90</y>
+      <w>306</w>
+      <h>36</h>
     </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
+    <panel_attributes>halign=center
+*4 consultTurnTable*
+lw=0
+fontsize=20
+</panel_attributes>
+    <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>90</x>
-      <y>170</y>
-      <w>270</w>
-      <h>40</h>
+      <x>18</x>
+      <y>198</y>
+      <w>27</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>18</x>
+      <y>234</y>
+      <w>243</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-getRecipeBook( )</panel_attributes>
+getTurnTable( )</panel_attributes>
     <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>210</x>
-      <y>100</y>
-      <w>230</w>
-      <h>50</h>
+      <x>126</x>
+      <y>171</y>
+      <w>207</w>
+      <h>45</h>
     </coordinates>
-    <panel_attributes>menuMgr:
-MenuManager</panel_attributes>
+    <panel_attributes>kitechenTaskManager:
+KitechenTaskManager</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
-      <y>140</y>
-      <w>30</w>
-      <h>200</h>
+      <x>243</x>
+      <y>207</y>
+      <w>27</w>
+      <h>225</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>340</x>
-      <y>190</y>
-      <w>20</w>
-      <h>100</h>
+      <x>243</x>
+      <y>252</y>
+      <w>18</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -62,34 +77,34 @@ MenuManager</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>510</x>
-      <y>100</y>
-      <w>230</w>
-      <h>50</h>
+      <x>351</x>
+      <y>171</y>
+      <w>207</w>
+      <h>45</h>
     </coordinates>
-    <panel_attributes>recipeMgr:
-RecipeManager
+    <panel_attributes>tTableManager:
+TurnTableManager
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
-      <y>140</y>
-      <w>30</w>
-      <h>200</h>
+      <x>441</x>
+      <y>207</y>
+      <w>27</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>560</x>
-      <y>210</y>
-      <w>20</w>
-      <h>60</h>
+      <x>441</x>
+      <y>270</y>
+      <w>18</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -97,46 +112,46 @@ RecipeManager
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
-      <y>190</y>
-      <w>230</w>
-      <h>40</h>
+      <x>252</x>
+      <y>252</y>
+      <w>207</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-getRecipes( )</panel_attributes>
+getTurns( )</panel_attributes>
     <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
-      <y>250</y>
-      <w>230</w>
-      <h>40</h>
+      <x>252</x>
+      <y>306</y>
+      <w>207</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-recipes</panel_attributes>
+turnTable</panel_attributes>
     <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>90</x>
-      <y>270</y>
-      <w>270</w>
-      <h>40</h>
+      <x>18</x>
+      <y>324</y>
+      <w>243</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-recipes</panel_attributes>
+turnTable</panel_attributes>
     <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>70</x>
-      <y>70</y>
-      <w>90</w>
-      <h>70</h>
+      <x>0</x>
+      <y>144</y>
+      <w>81</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
