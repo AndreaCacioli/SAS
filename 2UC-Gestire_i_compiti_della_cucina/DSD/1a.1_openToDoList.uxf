@@ -7,10 +7,10 @@
       <x>130</x>
       <y>140</y>
       <w>30</w>
-      <h>440</h>
+      <h>360</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;340.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -30,10 +30,10 @@ KitchenTaskManager</panel_attributes>
       <x>420</x>
       <y>140</y>
       <w>30</w>
-      <h>440</h>
+      <h>360</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;340.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
@@ -66,12 +66,12 @@ fontsize=20
     <coordinates>
       <x>130</x>
       <y>200</y>
-      <w>320</w>
+      <w>310</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 openToDoList(service)</panel_attributes>
-    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -91,22 +91,22 @@ Service</panel_attributes>
       <x>770</x>
       <y>140</y>
       <w>30</w>
-      <h>440</h>
+      <h>360</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;340.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>420</x>
       <y>220</y>
-      <w>380</w>
+      <w>370</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 tdl = getToDoList()</panel_attributes>
-    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;350.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -164,7 +164,7 @@ tdl</panel_attributes>
     </coordinates>
     <panel_attributes>alt 
 fg=#761C8C
-[!user.isChef()]
+[user.isChef()]
 --
 
 
