@@ -13,7 +13,6 @@ public class Recipe extends Procedure {
     private static Map<Integer, Recipe> all = new HashMap<>();
 
     private int id;
-    private String name;
 
     private Recipe() {
 
