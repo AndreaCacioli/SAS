@@ -4,8 +4,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>24</x>
-      <y>128</y>
+      <x>152</x>
+      <y>104</y>
       <w>24</w>
       <h>976</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>144</x>
-      <y>96</y>
+      <x>272</x>
+      <y>72</y>
       <w>232</w>
       <h>40</h>
     </coordinates>
@@ -27,8 +27,8 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>256</x>
-      <y>128</y>
+      <x>384</x>
+      <y>104</y>
       <w>24</w>
       <h>944</h>
     </coordinates>
@@ -38,8 +38,8 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>0</x>
-      <y>80</y>
+      <x>128</x>
+      <y>56</y>
       <w>72</w>
       <h>56</h>
     </coordinates>
@@ -49,13 +49,13 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>352</x>
-      <y>24</y>
+      <x>480</x>
+      <y>0</y>
       <w>272</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>halign=center
-*2 deleteProcedure*
+*6 addFeatures*
 lw=0
 fontsize=20
 </panel_attributes>
@@ -64,20 +64,20 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>24</x>
-      <y>184</y>
-      <w>256</w>
+      <x>144</x>
+      <y>160</y>
+      <w>272</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-deleteProcedure(procedure)</panel_attributes>
-    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+addFeatures(kitchenTask,esteemTime,amount)</panel_attributes>
+    <additional_attributes>20.0;20.0;310.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>256</x>
-      <y>200</y>
+      <x>384</x>
+      <y>176</y>
       <w>16</w>
       <h>600</h>
     </coordinates>
@@ -87,20 +87,20 @@ deleteProcedure(procedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>256</x>
-      <y>208</y>
+      <x>384</x>
+      <y>184</y>
       <w>424</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-deleteProcedure(procedure)</panel_attributes>
+addFeatures(kitchenTask,esteemTime,amount)</panel_attributes>
     <additional_attributes>10.0;20.0;510.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>656</x>
-      <y>224</y>
+      <x>784</x>
+      <y>200</y>
       <w>16</w>
       <h>344</h>
     </coordinates>
@@ -110,8 +110,8 @@ deleteProcedure(procedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>552</x>
-      <y>96</y>
+      <x>680</x>
+      <y>72</y>
       <w>232</w>
       <h>40</h>
     </coordinates>
@@ -122,8 +122,8 @@ ToDoList</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>656</x>
-      <y>128</y>
+      <x>784</x>
+      <y>104</y>
       <w>24</w>
       <h>600</h>
     </coordinates>
@@ -133,10 +133,10 @@ ToDoList</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>400</x>
-      <y>256</y>
+      <x>528</x>
+      <y>232</y>
       <w>520</w>
-      <h>192</h>
+      <h>328</h>
     </coordinates>
     <panel_attributes>LOOP for all KitchenTask kt in tdl.tasks
 fg=blue
@@ -144,63 +144,66 @@ fg=blue
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLGeneric</id>
+    <id>Relation</id>
     <coordinates>
-      <x>832</x>
-      <y>96</y>
-      <w>232</w>
-      <h>40</h>
+      <x>784</x>
+      <y>312</y>
+      <w>256</w>
+      <h>88</h>
     </coordinates>
-    <panel_attributes>tdl.tasks: 
-ArrayList&lt;KitchenTask&gt;
-</panel_attributes>
-    <additional_attributes/>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+this.esteemTime = esteemTime</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0;90.0;90.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>936</x>
-      <y>128</y>
-      <w>24</w>
-      <h>616</h>
+      <x>784</x>
+      <y>400</y>
+      <w>208</w>
+      <h>88</h>
     </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;750.0</additional_attributes>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+this.amount = amount</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0;90.0;90.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>448</x>
-      <y>296</y>
-      <w>424</w>
-      <h>136</h>
+      <x>648</x>
+      <y>400</y>
+      <w>240</w>
+      <h>80</h>
     </coordinates>
-    <panel_attributes>OPT kt.procedure == procedure
+    <panel_attributes>OPT amount!=null
 fg=#128C86
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
+    <id>UMLFrame</id>
     <coordinates>
-      <x>656</x>
-      <y>360</y>
-      <w>304</w>
-      <h>32</h>
+      <x>648</x>
+      <y>312</y>
+      <w>240</w>
+      <h>80</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-remove(kt)</panel_attributes>
-    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+    <panel_attributes>OPT esteemTime!=null
+fg=#128C86
+</panel_attributes>
+    <additional_attributes/>
   </element>
   <element>
-    <id>UMLGeneric</id>
+    <id>UMLFrame</id>
     <coordinates>
-      <x>936</x>
-      <y>376</y>
-      <w>16</w>
-      <h>48</h>
+      <x>576</x>
+      <y>272</y>
+      <w>432</w>
+      <h>248</h>
     </coordinates>
-    <panel_attributes/>
+    <panel_attributes>OPT kt == kitchenTask
+fg=#128C86
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
