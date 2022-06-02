@@ -8,11 +8,14 @@ import businesslogic.user.User;
 import java.time.Duration;
 
 public class KitchenTask {
+    //TODO Make cook an arraylist of User
     private User cook;
     private Turn turn;
     private Procedure procedure;
     private Duration esteemTime;
     private Float amount;
+    //TODO Aggiungere la equals e la proprietá id sul database
+    private int id;
 
     public KitchenTask(MenuItem item) {
         this.procedure = item.getItemRecipe();
