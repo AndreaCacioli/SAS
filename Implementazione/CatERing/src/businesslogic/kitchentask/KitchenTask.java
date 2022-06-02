@@ -5,10 +5,14 @@ import businesslogic.recipe.Procedure;
 import businesslogic.turn.Turn;
 import businesslogic.user.User;
 
+import java.time.Duration;
+
 public class KitchenTask {
     private User cook;
     private Turn turn;
     private Procedure procedure;
+    private Duration esteemTime;
+    private Float amount;
 
     public KitchenTask(MenuItem item) {
         this.procedure = item.getItemRecipe();
@@ -28,10 +32,12 @@ public class KitchenTask {
 
     @Override
     public String toString() {
-        return "\tTask{" +
+        return "KitchenTask{" +
                 "cook=" + cook +
                 ", turn=" + turn +
                 ", procedure=" + procedure +
+                ", esteemTime=" + esteemTime +
+                ", amount=" + amount +
                 "}\n";
     }
 
@@ -41,5 +47,13 @@ public class KitchenTask {
 
     public void setTurn(Turn turn) {
         this.turn = turn;
+    }
+
+    public void setDuration(Duration esteemTime) {
+        this.esteemTime = esteemTime;
+    }
+
+    public void setAmount(Float amount) {
+        this.amount = amount;
     }
 }

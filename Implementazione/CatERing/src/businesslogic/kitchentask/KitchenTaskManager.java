@@ -11,6 +11,7 @@ import businesslogic.turn.TurnTable;
 import businesslogic.user.User;
 import javafx.collections.ObservableList;
 
+import java.time.Duration;
 import java.util.Comparator;
 
 public class KitchenTaskManager {
@@ -59,6 +60,7 @@ public class KitchenTaskManager {
 
     public KitchenTask addTask(Procedure procedure, User cook, Turn turn) throws UseCaseLogicException, CookUnavailableException {
         if(!CatERing.getInstance().getUserManager().getCurrentUser().isChef() || currentToDoList == null) throw new UseCaseLogicException();
+        if(!cook.isCook()) throw new UseCaseLogicException();
         KitchenTask kitchenTask = new KitchenTask(procedure);
         if(cook != null)
         {
@@ -81,5 +83,7 @@ public class KitchenTaskManager {
     }
 
 
-
+    public ToDoList addFeatures(KitchenTask kitchenTask, Duration esteemTime, float amount) {
+        return currentToDoList.addFeatures(kitchenTask, esteemTime, amount);
+    }
 }

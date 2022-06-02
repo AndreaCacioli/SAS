@@ -2,6 +2,7 @@ package businesslogic.kitchentask;
 
 import businesslogic.menu.Menu;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -29,5 +30,19 @@ public class ToDoList {
             s += kt.toString();
         }
         return s + "\n";
+    }
+
+    public ToDoList addFeatures(KitchenTask kitchenTask, Duration esteemTime, Float amount)
+    {
+        for(KitchenTask kt : tasks)
+        {
+            if(kt.getProcedure().getName().compareTo(kitchenTask.getProcedure().getName()) == 0)
+            {
+                if(esteemTime != null) kt.setDuration(esteemTime);
+                if(amount != null) kt.setAmount(amount);
+                break;
+            }
+        }
+        return this;
     }
 }

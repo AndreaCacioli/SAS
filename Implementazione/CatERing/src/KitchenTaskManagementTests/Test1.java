@@ -10,9 +10,10 @@ import businesslogic.menu.Section;
 import businesslogic.recipe.Recipe;
 import businesslogic.turn.Turn;
 import businesslogic.turn.TurnTable;
+import businesslogic.user.User;
 import javafx.collections.ObservableList;
-
 import java.util.Comparator;
+import java.time.Duration;
 
 public class Test1 {
     public static void main(String[] args) {
@@ -42,7 +43,12 @@ public class Test1 {
 
             System.out.println(tdl);
 
-            //CatERing.getInstance().getKitchenTaskManager().addProcedure(recipes.get(5));
+            System.out.println("TEST AGGIUNGI PROCEDURA");
+            CatERing.getInstance().getKitchenTaskManager().addProcedure(recipes.get(5));
+            System.out.println(tdl);
+
+
+            System.out.println("TEST ORDINA LISTA");
             Comparator<KitchenTask> comparatorCookName = new Comparator<KitchenTask>() {
                 public int compare(KitchenTask o1, KitchenTask o2) {
                     if (o1.getCook() != null && o2.getCook() != null) {
@@ -62,15 +68,25 @@ public class Test1 {
                 }
             };
             CatERing.getInstance().getKitchenTaskManager().sortToDoList(comparatorProcedureName);
-            TurnTable tt = CatERing.getInstance().getKitchenTaskManager().getTurnTable();
+            System.out.println(tdl);
 
+
+            System.out.println("TEST AGGIUNGI LAVORO CUOCO");
+            TurnTable tt = CatERing.getInstance().getKitchenTaskManager().getTurnTable();
             Turn turn = tt.getTurnById(1);
 
-            KitchenTask toUpdate = CatERing.getInstance().getKitchenTaskManager().addTask(recipes.get(5),
-                    CatERing.getInstance().getUserManager().getCurrentUser(),
+            CatERing.getInstance().getUserManager().fakeLogin("Marinella");
+            User cook =CatERing.getInstance().getUserManager().getCurrentUser();
+            CatERing.getInstance().getUserManager().fakeLogin("Lidia");
+            KitchenTask toUpdate = CatERing.getInstance().getKitchenTaskManager().addTask(recipes.get(8),
+                    cook,
                     turn);
-
             System.out.println(tdl);
+
+            System.out.println("TEST ADD FEATURES");
+            CatERing.getInstance().getKitchenTaskManager().addFeatures(toUpdate, Duration.ofMinutes(53), 0.5f);
+            System.out.println(tdl);
+
 
             //Delete so the database is clear
             CatERing.getInstance().getMenuManager().deleteMenu(m);
