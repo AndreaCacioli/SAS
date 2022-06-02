@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>5</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>195</x>
-      <y>65</y>
-      <w>15</w>
-      <h>280</h>
+      <x>130</x>
+      <y>140</y>
+      <w>30</w>
+      <h>440</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;540.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>270</x>
-      <y>45</y>
-      <w>145</w>
-      <h>25</h>
+      <x>280</x>
+      <y>90</y>
+      <w>290</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>kitchenTaskManager:
 KitchenTaskManager</panel_attributes>
@@ -27,21 +27,21 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
-      <y>65</y>
-      <w>15</w>
-      <h>255</h>
+      <x>420</x>
+      <y>140</y>
+      <w>30</w>
+      <h>440</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;490.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>180</x>
-      <y>35</y>
-      <w>45</w>
-      <h>35</h>
+      <x>100</x>
+      <y>70</y>
+      <w>90</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -49,10 +49,10 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
+      <x>540</x>
       <y>0</y>
-      <w>170</w>
-      <h>20</h>
+      <w>340</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>halign=center
 *1a.1 openToDoList*
@@ -64,10 +64,10 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>195</x>
-      <y>100</y>
-      <w>160</w>
-      <h>20</h>
+      <x>130</x>
+      <y>200</y>
+      <w>320</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 openToDoList(service)</panel_attributes>
@@ -76,10 +76,10 @@ openToDoList(service)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>445</x>
-      <y>45</y>
-      <w>145</w>
-      <h>25</h>
+      <x>630</x>
+      <y>90</y>
+      <w>290</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>service:
 Service</panel_attributes>
@@ -88,21 +88,21 @@ Service</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>515</x>
-      <y>65</y>
-      <w>15</w>
-      <h>305</h>
+      <x>770</x>
+      <y>140</y>
+      <w>30</w>
+      <h>440</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;590.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
-      <y>110</y>
-      <w>190</w>
-      <h>20</h>
+      <x>420</x>
+      <y>220</y>
+      <w>380</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 tdl = getToDoList()</panel_attributes>
@@ -111,10 +111,10 @@ tdl = getToDoList()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
-      <y>125</y>
-      <w>190</w>
-      <h>20</h>
+      <x>420</x>
+      <y>250</y>
+      <w>380</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 tdl</panel_attributes>
@@ -123,10 +123,10 @@ tdl</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>195</x>
-      <y>145</y>
-      <w>160</w>
-      <h>20</h>
+      <x>130</x>
+      <y>290</y>
+      <w>320</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 tdl</panel_attributes>
@@ -135,10 +135,10 @@ tdl</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>515</x>
-      <y>120</y>
-      <w>10</w>
-      <h>20</h>
+      <x>770</x>
+      <y>240</y>
+      <w>20</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -146,10 +146,10 @@ tdl</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>340</x>
-      <y>110</y>
-      <w>10</w>
-      <h>100</h>
+      <x>420</x>
+      <y>220</y>
+      <w>20</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -157,10 +157,10 @@ tdl</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>140</x>
-      <y>70</y>
-      <w>445</w>
-      <h>165</h>
+      <x>20</x>
+      <y>150</y>
+      <w>890</w>
+      <h>330</h>
     </coordinates>
     <panel_attributes>alt 
 fg=#761C8C
@@ -187,10 +187,10 @@ fontsize=11
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>195</x>
-      <y>185</y>
-      <w>160</w>
-      <h>20</h>
+      <x>130</x>
+      <y>370</y>
+      <w>320</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
