@@ -9,6 +9,7 @@ import persistence.ResultHandler;
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class EventInfo implements EventItemInfo {
     private int id;
