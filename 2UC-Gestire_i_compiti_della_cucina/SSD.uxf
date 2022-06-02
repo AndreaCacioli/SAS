@@ -205,7 +205,7 @@ bg=#B8E0E0</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-5. assegnaCompito(procedura, cuoco?, turno?)</panel_attributes>
+5. assegnaCompito(procedura, cuochi?, turno?)</panel_attributes>
     <additional_attributes>10.0;20.0;920.0;20.0</additional_attributes>
   </element>
   <element>
@@ -496,7 +496,7 @@ layer=1
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-5a.1 modificaCompito(compito, procedura?, cuoco?, turno?)
+5a.1 modificaCompito(compito, procedura?, cuochi?, turno?)
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;920.0;20.0</additional_attributes>
   </element>
@@ -654,7 +654,7 @@ layer=2</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-5.a Il cuoco non é disponibile
+5.a I cuochi non sono disponibili
 fg=red
 layer=2</panel_attributes>
     <additional_attributes>10.0;20.0;930.0;20.0</additional_attributes>
@@ -685,7 +685,7 @@ layer=2</panel_attributes>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-5a.1a Il cuoco non é disponibile
+5a.1a I cuochi non sono disponibili
 fg=red
 layer=3</panel_attributes>
     <additional_attributes>10.0;20.0;930.0;20.0</additional_attributes>

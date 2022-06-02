@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>8</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>248</y>
-      <w>24</w>
-      <h>600</h>
+      <x>120</x>
+      <y>174</y>
+      <w>18</w>
+      <h>450</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;730.0</additional_attributes>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>280</x>
-      <y>216</y>
-      <w>232</w>
-      <h>40</h>
+      <x>210</x>
+      <y>150</y>
+      <w>174</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>kitchenTaskManager:
 KitchenTaskManager</panel_attributes>
@@ -27,10 +27,10 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>248</y>
-      <w>24</w>
-      <h>600</h>
+      <x>294</x>
+      <y>174</y>
+      <w>18</w>
+      <h>450</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;730.0</additional_attributes>
@@ -38,10 +38,10 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>136</x>
-      <y>200</y>
-      <w>72</w>
-      <h>56</h>
+      <x>102</x>
+      <y>138</y>
+      <w>54</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -49,10 +49,10 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>488</x>
-      <y>144</y>
-      <w>272</w>
-      <h>32</h>
+      <x>366</x>
+      <y>96</y>
+      <w>204</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>halign=center
 *2 addProcedure*
@@ -64,10 +64,10 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>304</y>
-      <w>248</w>
-      <h>32</h>
+      <x>120</x>
+      <y>216</y>
+      <w>186</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 addProcedure(procedure)</panel_attributes>
@@ -76,10 +76,10 @@ addProcedure(procedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>392</x>
-      <y>320</y>
-      <w>16</w>
-      <h>440</h>
+      <x>294</x>
+      <y>228</y>
+      <w>12</w>
+      <h>330</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -87,10 +87,10 @@ addProcedure(procedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>576</x>
-      <y>312</y>
-      <w>232</w>
-      <h>40</h>
+      <x>432</x>
+      <y>222</y>
+      <w>174</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>c:
 KitchenTask</panel_attributes>
@@ -99,10 +99,10 @@ KitchenTask</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>320</y>
-      <w>192</w>
-      <h>32</h>
+      <x>300</x>
+      <y>228</y>
+      <w>144</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=.&gt;&gt;&gt;
 create(procedure)</panel_attributes>
@@ -111,10 +111,10 @@ create(procedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>688</x>
-      <y>352</y>
-      <w>16</w>
-      <h>120</h>
+      <x>516</x>
+      <y>252</y>
+      <w>12</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -122,10 +122,10 @@ create(procedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>688</x>
-      <y>344</y>
-      <w>24</w>
-      <h>496</h>
+      <x>516</x>
+      <y>246</y>
+      <w>18</w>
+      <h>372</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;600.0</additional_attributes>
@@ -133,10 +133,10 @@ create(procedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>456</y>
-      <w>312</w>
-      <h>32</h>
+      <x>300</x>
+      <y>330</y>
+      <w>234</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=.&gt;&gt;&gt;
 c</panel_attributes>
@@ -145,10 +145,10 @@ c</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1144</x>
-      <y>216</y>
-      <w>256</w>
-      <h>40</h>
+      <x>858</x>
+      <y>150</y>
+      <w>192</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>kitchenTaskManager.currentToDoList.tasks: 
 ArrayList&lt;KitchenTask&gt;
@@ -158,10 +158,10 @@ ArrayList&lt;KitchenTask&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1248</x>
-      <y>248</y>
-      <w>24</w>
-      <h>600</h>
+      <x>936</x>
+      <y>174</y>
+      <w>18</w>
+      <h>450</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;730.0</additional_attributes>
@@ -169,10 +169,10 @@ ArrayList&lt;KitchenTask&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>536</y>
-      <w>592</w>
-      <h>32</h>
+      <x>294</x>
+      <y>390</y>
+      <w>444</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 add(c)</panel_attributes>
@@ -181,10 +181,10 @@ add(c)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>968</x>
-      <y>552</y>
-      <w>16</w>
-      <h>96</h>
+      <x>726</x>
+      <y>402</y>
+      <w>12</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -192,10 +192,10 @@ add(c)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>864</x>
-      <y>216</y>
-      <w>232</w>
-      <h>40</h>
+      <x>648</x>
+      <y>150</y>
+      <w>174</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>kitchenTaskManager.currentToDoList:
 ToDoList</panel_attributes>
@@ -204,10 +204,10 @@ ToDoList</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>968</x>
-      <y>248</y>
-      <w>24</w>
-      <h>600</h>
+      <x>726</x>
+      <y>174</y>
+      <w>18</w>
+      <h>450</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;730.0</additional_attributes>
@@ -215,10 +215,10 @@ ToDoList</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>976</x>
-      <y>552</y>
-      <w>288</w>
-      <h>32</h>
+      <x>732</x>
+      <y>402</y>
+      <w>216</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 add(c)</panel_attributes>
@@ -227,10 +227,10 @@ add(c)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1248</x>
-      <y>568</y>
-      <w>16</w>
-      <h>32</h>
+      <x>936</x>
+      <y>414</y>
+      <w>12</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -238,10 +238,10 @@ add(c)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>664</y>
-      <w>256</w>
-      <h>32</h>
+      <x>120</x>
+      <y>486</y>
+      <w>192</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=.&gt;&gt;&gt;
 c</panel_attributes>
@@ -250,10 +250,10 @@ c</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>72</x>
-      <y>272</y>
-      <w>1280</w>
-      <h>560</h>
+      <x>54</x>
+      <y>192</y>
+      <w>960</w>
+      <h>420</h>
     </coordinates>
     <panel_attributes>alt 
 fg=#761C8C
@@ -304,10 +304,10 @@ fontsize=11
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>712</y>
-      <w>256</w>
-      <h>32</h>
+      <x>120</x>
+      <y>522</y>
+      <w>192</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -316,10 +316,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>688</x>
-      <y>392</y>
-      <w>248</w>
-      <h>72</h>
+      <x>516</x>
+      <y>282</y>
+      <w>186</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.procedure = procedure</panel_attributes>

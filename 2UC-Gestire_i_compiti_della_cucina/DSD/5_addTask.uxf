@@ -4,7 +4,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>203</x>
+      <x>119</x>
       <y>91</y>
       <w>21</w>
       <h>721</h>
@@ -15,7 +15,7 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>308</x>
+      <x>224</x>
       <y>63</y>
       <w>203</w>
       <h>35</h>
@@ -27,7 +27,7 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>406</x>
+      <x>322</x>
       <y>91</y>
       <w>21</w>
       <h>721</h>
@@ -38,7 +38,7 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>182</x>
+      <x>98</x>
       <y>49</y>
       <w>63</w>
       <h>49</h>
@@ -49,7 +49,7 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>490</x>
+      <x>406</x>
       <y>0</y>
       <w>238</w>
       <h>28</h>
@@ -64,19 +64,19 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>203</x>
+      <x>119</x>
       <y>140</y>
       <w>217</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-addTask(procedure,cook?,turn?)</panel_attributes>
+addTask(procedure,cooks?,turn?)</panel_attributes>
     <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>406</x>
+      <x>322</x>
       <y>154</y>
       <w>14</w>
       <h>609</h>
@@ -87,7 +87,7 @@ addTask(procedure,cook?,turn?)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>525</x>
+      <x>441</x>
       <y>147</y>
       <w>203</w>
       <h>35</h>
@@ -99,7 +99,7 @@ KitchenTask</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
+      <x>532</x>
       <y>175</y>
       <w>21</w>
       <h>637</h>
@@ -110,7 +110,7 @@ KitchenTask</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>406</x>
+      <x>322</x>
       <y>154</y>
       <w>133</w>
       <h>28</h>
@@ -122,31 +122,31 @@ create(procedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>623</x>
-      <y>217</y>
+      <x>539</x>
+      <y>196</y>
       <w>203</w>
-      <h>56</h>
+      <h>49</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.procedure = procedure</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;10.0;80.0;60.0;10.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0;80.0;50.0;10.0;50.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
+      <x>532</x>
       <y>336</y>
-      <w>154</w>
+      <w>168</w>
       <h>56</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-this.cook = cook</panel_attributes>
+this.cooks = cooks</panel_attributes>
     <additional_attributes>10.0;10.0;90.0;10.0;90.0;60.0;20.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
+      <x>532</x>
       <y>392</y>
       <w>147</w>
       <h>49</h>
@@ -158,7 +158,7 @@ this.turn = turn</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>826</x>
+      <x>742</x>
       <y>91</y>
       <w>21</w>
       <h>721</h>
@@ -169,7 +169,7 @@ this.turn = turn</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>735</x>
+      <x>651</x>
       <y>63</y>
       <w>203</w>
       <h>35</h>
@@ -181,7 +181,7 @@ ToDoList</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>406</x>
+      <x>322</x>
       <y>602</y>
       <w>434</w>
       <h>28</h>
@@ -193,8 +193,8 @@ addKitchenTask(c)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>413</x>
-      <y>259</y>
+      <x>329</x>
+      <y>224</y>
       <w>224</w>
       <h>28</h>
     </coordinates>
@@ -205,7 +205,7 @@ c</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>826</x>
+      <x>742</x>
       <y>630</y>
       <w>252</w>
       <h>28</h>
@@ -217,7 +217,7 @@ add(c)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1064</x>
+      <x>980</x>
       <y>91</y>
       <w>21</w>
       <h>721</h>
@@ -228,7 +228,7 @@ add(c)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>959</x>
+      <x>875</x>
       <y>63</y>
       <w>217</w>
       <h>35</h>
@@ -242,7 +242,7 @@ ArrayList&lt;KitchenTask&gt;
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>98</x>
+      <x>14</x>
       <y>112</y>
       <w>1127</w>
       <h>686</h>
@@ -323,7 +323,7 @@ fontsize=11
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>203</x>
+      <x>119</x>
       <y>735</y>
       <w>224</w>
       <h>28</h>
@@ -335,7 +335,7 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>616</x>
+      <x>532</x>
       <y>196</y>
       <w>14</w>
       <h>406</h>
@@ -346,7 +346,7 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>826</x>
+      <x>742</x>
       <y>616</y>
       <w>14</w>
       <h>49</h>
@@ -357,7 +357,7 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1064</x>
+      <x>980</x>
       <y>644</y>
       <w>14</w>
       <h>28</h>
@@ -368,7 +368,7 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>203</x>
+      <x>119</x>
       <y>686</y>
       <w>224</w>
       <h>28</h>
@@ -380,19 +380,19 @@ c</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>406</x>
+      <x>322</x>
       <y>322</y>
       <w>224</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-setCook(cook)</panel_attributes>
+setCooks(cooks)</panel_attributes>
     <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>406</x>
+      <x>322</x>
       <y>378</y>
       <w>224</w>
       <h>28</h>
@@ -404,12 +404,12 @@ setTurn(turn)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>434</x>
-      <y>287</y>
+      <x>350</x>
+      <y>280</y>
       <w>378</w>
-      <h>315</h>
+      <h>322</h>
     </coordinates>
-    <panel_attributes>ALT[cook!=null]
+    <panel_attributes>ALT[c!=null]
 fg=#761C8C
 lw=2
 --
@@ -437,12 +437,12 @@ lw=2
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>448</x>
+      <x>364</x>
       <y>301</y>
       <w>343</w>
       <h>196</h>
     </coordinates>
-    <panel_attributes>ALT[turn!=null &amp;&amp; turn.isAvailable(cook)]
+    <panel_attributes>ALT[turn!=null &amp;&amp; turn.isAvailable(c)]
 fg=#761C8C
 lw=2
 --
@@ -463,7 +463,7 @@ lw=2
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>448</x>
+      <x>364</x>
       <y>511</y>
       <w>343</w>
       <h>77</h>
@@ -476,7 +476,7 @@ fg=#128C86
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>413</x>
+      <x>329</x>
       <y>539</y>
       <w>217</w>
       <h>28</h>
@@ -488,7 +488,7 @@ setTurn(turn)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
+      <x>532</x>
       <y>553</y>
       <w>147</w>
       <h>42</h>
@@ -500,7 +500,7 @@ this.turn = turn</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>203</x>
+      <x>119</x>
       <y>462</y>
       <w>434</w>
       <h>28</h>
@@ -508,5 +508,18 @@ this.turn = turn</panel_attributes>
     <panel_attributes>lt=&lt;.
 throw CookUnavailableException</panel_attributes>
     <additional_attributes>10.0;20.0;600.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>343</x>
+      <y>252</y>
+      <w>399</w>
+      <h>357</h>
+    </coordinates>
+    <panel_attributes>LOOP [for all cook c in cooks]
+fg=blue
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

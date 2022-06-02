@@ -240,7 +240,7 @@ currentToDoList</panel_attributes>
     </coordinates>
     <panel_attributes>alt 
 fg=#761C8C
-[user.isChef() &amp;&amp; kitchenTaskManager.currentToDoList!=null &amp;&amp;  ]
+[user.isChef() &amp;&amp; kitchenTaskManager.currentToDoList!=null &amp;&amp; kitchenTaskManager.tasks.contains(kitchenTask) ]
 --
 
 
