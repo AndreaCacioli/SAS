@@ -67,7 +67,7 @@
       <recent name="businesslogic.kitchentask" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test1">
+  <component name="RunManager" selected="Application.Test5a">
     <configuration name="CatERingApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CatERingApp" />
       <module name="CatERing" />
@@ -89,8 +89,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test2a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KitchenTaskManagementTests.Test2a" />
+      <module name="CatERing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="KitchenTaskManagementTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test5a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KitchenTaskManagementTests.Test5a" />
+      <module name="CatERing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="KitchenTaskManagementTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test5a" />
+        <item itemvalue="Application.Test2a" />
         <item itemvalue="Application.Test1" />
         <item itemvalue="Application.CatERingApp" />
       </list>
@@ -111,7 +139,7 @@
       <workItem from="1654018298437" duration="115000" />
       <workItem from="1654089805537" duration="1088000" />
       <workItem from="1654091217638" duration="1042000" />
-      <workItem from="1654159616278" duration="18845000" />
+      <workItem from="1654159616278" duration="27560000" />
     </task>
     <servers />
   </component>

@@ -1,15 +1,16 @@
 package businesslogic.kitchentask;
 
+import businesslogic.UseCaseLogicException;
 import businesslogic.menu.MenuItem;
 import businesslogic.recipe.Procedure;
 import businesslogic.turn.Turn;
 import businesslogic.user.User;
 
 import java.time.Duration;
+import java.util.ArrayList;
 
 public class KitchenTask {
-    //TODO Make cook an arraylist of User
-    private User cook;
+    private ArrayList<User> cooks;
     private Turn turn;
     private Procedure procedure;
     private Duration esteemTime;
@@ -25,8 +26,8 @@ public class KitchenTask {
         this.procedure = procedure;
     }
 
-    public User getCook() {
-        return cook;
+    public ArrayList<User> getCooks() {
+        return this.cooks;
     }
 
     public Procedure getProcedure() {
@@ -36,7 +37,7 @@ public class KitchenTask {
     @Override
     public String toString() {
         return "KitchenTask{" +
-                "cook=" + cook +
+                "cook=" + cooks +
                 ", turn=" + turn +
                 ", procedure=" + procedure +
                 ", esteemTime=" + esteemTime +
@@ -44,8 +45,14 @@ public class KitchenTask {
                 "}\n";
     }
 
-    public void setCook(User cook) {
-        this.cook = cook;
+    public void addCooks(ArrayList<User> cooks) {
+        if (turn == null) System.err.println("Adding cooks without turn");
+        if (this.cooks == null) this.cooks = new ArrayList<>();
+        for (User u : cooks) {
+            if (!u.isCook() || !turn.isAvailable(u))
+                System.err.println("Cook Unavailable"); //Maybe change a variable in kitchenTaskManager instead
+            else this.cooks.add(u);
+        }
     }
 
     public void setTurn(Turn turn) {
@@ -59,4 +66,27 @@ public class KitchenTask {
     public void setAmount(Float amount) {
         this.amount = amount;
     }
+
+    public void updateTask(Procedure procedure) {
+        this.procedure = procedure;
+    }
+
+    public void updateTask(ArrayList<User> cooks) throws UseCaseLogicException {
+        if(cooks == null)
+        {
+            this.cooks = null;
+            return;
+        }
+        if(this.turn == null  && cooks.size() > 0) throw new UseCaseLogicException();
+        this.cooks = new ArrayList<>(); //removing the previous list of cooks
+        addCooks(cooks);
+    }
+
+    public void updateTask(Turn turn) {
+        this.turn = turn;
+        if(cooks != null && turn != null) cooks.removeIf(user -> !turn.isAvailable(user)); //Maybe change a variable in kitchenTaskManager to signal the drop of cooks
+    }
+
+
+
 }

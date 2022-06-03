@@ -1,6 +1,7 @@
 package businesslogic.kitchentask;
 
 import businesslogic.menu.Menu;
+import businesslogic.recipe.Procedure;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -44,5 +45,10 @@ public class ToDoList {
             }
         }
         return this;
+    }
+
+    public void deleteProcedure(Procedure procedure) {
+        //TODO change if we do not identify the procedure/kitchen task with an id
+        tasks.removeIf(kt -> kt.getProcedure().getName().equals(procedure.getName()));
     }
 }

@@ -12,6 +12,8 @@ import businesslogic.turn.Turn;
 import businesslogic.turn.TurnTable;
 import businesslogic.user.User;
 import javafx.collections.ObservableList;
+
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.time.Duration;
 
@@ -32,9 +34,7 @@ public class Test1 {
 
             ObservableList<Recipe> recipes = CatERing.getInstance().getRecipeManager().getRecipes();
             CatERing.getInstance().getMenuManager().insertItem(recipes.get(0), antipasti);
-            CatERing.getInstance().getMenuManager().insertItem(recipes.get(1), antipasti);
             CatERing.getInstance().getMenuManager().insertItem(recipes.get(2), antipasti);
-            CatERing.getInstance().getMenuManager().insertItem(recipes.get(6), secondi);
             CatERing.getInstance().getMenuManager().insertItem(recipes.get(7), secondi);
             CatERing.getInstance().getMenuManager().insertItem(recipes.get(3));
             CatERing.getInstance().getMenuManager().insertItem(recipes.get(4));
@@ -51,8 +51,8 @@ public class Test1 {
             System.out.println("TEST ORDINA LISTA");
             Comparator<KitchenTask> comparatorCookName = new Comparator<KitchenTask>() {
                 public int compare(KitchenTask o1, KitchenTask o2) {
-                    if (o1.getCook() != null && o2.getCook() != null) {
-                        return o1.getCook().getUserName().compareTo(o2.getCook().getUserName());
+                    if (o1.getCooks().get(0) != null && o2.getCooks().get(0) != null) {
+                        return o1.getCooks().get(0).getUserName().compareTo(o2.getCooks().get(0).getUserName());
                     } else {
                         return 0;
                     }
@@ -76,12 +76,24 @@ public class Test1 {
             Turn turn = tt.getTurnById(1);
 
             CatERing.getInstance().getUserManager().fakeLogin("Marinella");
-            User cook =CatERing.getInstance().getUserManager().getCurrentUser();
+
+            ArrayList<User> cooks = new ArrayList<>();
+            cooks.add(CatERing.getInstance().getUserManager().getCurrentUser());
+
             CatERing.getInstance().getUserManager().fakeLogin("Lidia");
+
+            //adding everything
             KitchenTask toUpdate = CatERing.getInstance().getKitchenTaskManager().addTask(recipes.get(8),
-                    cook,
+                    cooks,
                     turn);
             System.out.println(tdl);
+
+            //only adding turn
+            CatERing.getInstance().getKitchenTaskManager().addTask(recipes.get(1),
+                    null,
+                    tt.getRandomTurn());
+            System.out.println(tdl);
+
 
             System.out.println("TEST ADD FEATURES");
             CatERing.getInstance().getKitchenTaskManager().addFeatures(toUpdate, Duration.ofMinutes(53), 0.5f);
