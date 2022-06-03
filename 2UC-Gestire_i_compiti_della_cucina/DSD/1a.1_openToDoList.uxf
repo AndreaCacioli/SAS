@@ -105,7 +105,7 @@ Service</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-tdl = getToDoList()</panel_attributes>
+currentToDoList = getToDoList()</panel_attributes>
     <additional_attributes>10.0;20.0;350.0;20.0</additional_attributes>
   </element>
   <element>
@@ -129,7 +129,7 @@ tdl</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-tdl</panel_attributes>
+currentToDoList</panel_attributes>
     <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
   <element>

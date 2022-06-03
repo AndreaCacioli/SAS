@@ -4,8 +4,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>88</x>
-      <y>136</y>
+      <x>120</x>
+      <y>128</y>
       <w>24</w>
       <h>488</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>208</x>
-      <y>104</y>
+      <x>240</x>
+      <y>96</y>
       <w>232</w>
       <h>40</h>
     </coordinates>
@@ -27,8 +27,8 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
-      <y>136</y>
+      <x>352</x>
+      <y>128</y>
       <w>24</w>
       <h>488</h>
     </coordinates>
@@ -38,8 +38,8 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>64</x>
-      <y>88</y>
+      <x>96</x>
+      <y>80</y>
       <w>72</w>
       <h>56</h>
     </coordinates>
@@ -49,8 +49,8 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>416</x>
-      <y>32</y>
+      <x>448</x>
+      <y>24</y>
       <w>272</w>
       <h>32</h>
     </coordinates>
@@ -64,8 +64,8 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>88</x>
-      <y>192</y>
+      <x>120</x>
+      <y>184</y>
       <w>248</w>
       <h>32</h>
     </coordinates>
@@ -76,8 +76,8 @@ deleteProcedure(procedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>320</x>
-      <y>208</y>
+      <x>352</x>
+      <y>200</y>
       <w>16</w>
       <h>368</h>
     </coordinates>
@@ -87,8 +87,8 @@ deleteProcedure(procedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
-      <y>216</y>
+      <x>352</x>
+      <y>208</y>
       <w>416</w>
       <h>32</h>
     </coordinates>
@@ -99,8 +99,8 @@ deleteProcedure(procedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>720</x>
-      <y>232</y>
+      <x>752</x>
+      <y>224</y>
       <w>16</w>
       <h>264</h>
     </coordinates>
@@ -110,8 +110,8 @@ deleteProcedure(procedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>616</x>
-      <y>104</y>
+      <x>648</x>
+      <y>96</y>
       <w>232</w>
       <h>40</h>
     </coordinates>
@@ -122,8 +122,8 @@ ToDoList</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
-      <y>136</y>
+      <x>752</x>
+      <y>128</y>
       <w>24</w>
       <h>488</h>
     </coordinates>
@@ -133,8 +133,8 @@ ToDoList</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>416</x>
-      <y>264</y>
+      <x>448</x>
+      <y>256</y>
       <w>568</w>
       <h>192</h>
     </coordinates>
@@ -146,8 +146,8 @@ fg=blue
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>864</x>
-      <y>104</y>
+      <x>896</x>
+      <y>96</y>
       <w>264</w>
       <h>40</h>
     </coordinates>
@@ -159,8 +159,8 @@ ArrayList&lt;KitchenTask&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1000</x>
-      <y>136</y>
+      <x>1032</x>
+      <y>128</y>
       <w>24</w>
       <h>488</h>
     </coordinates>
@@ -170,8 +170,8 @@ ArrayList&lt;KitchenTask&gt;
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>440</x>
-      <y>304</y>
+      <x>472</x>
+      <y>296</y>
       <w>496</w>
       <h>136</h>
     </coordinates>
@@ -183,8 +183,8 @@ fg=#128C86
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
-      <y>368</y>
+      <x>752</x>
+      <y>360</y>
       <w>296</w>
       <h>32</h>
     </coordinates>
@@ -195,8 +195,8 @@ remove(kt)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1000</x>
-      <y>384</y>
+      <x>1032</x>
+      <y>376</y>
       <w>16</w>
       <h>48</h>
     </coordinates>
@@ -206,8 +206,8 @@ remove(kt)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
-      <y>168</y>
+      <x>32</x>
+      <y>160</y>
       <w>1152</w>
       <h>440</h>
     </coordinates>
@@ -254,8 +254,8 @@ fontsize=11
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>88</x>
-      <y>536</y>
+      <x>120</x>
+      <y>528</y>
       <w>256</w>
       <h>32</h>
     </coordinates>
