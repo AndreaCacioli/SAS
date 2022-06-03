@@ -25,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -65,9 +66,10 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="businesslogic.kitchentask" />
+      <recent name="persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test5a">
+  <component name="RunManager" selected="Application.Test2a">
     <configuration name="CatERingApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CatERingApp" />
       <module name="CatERing" />
@@ -117,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test5a" />
         <item itemvalue="Application.Test2a" />
+        <item itemvalue="Application.Test5a" />
         <item itemvalue="Application.Test1" />
         <item itemvalue="Application.CatERingApp" />
       </list>
@@ -139,7 +141,8 @@
       <workItem from="1654018298437" duration="115000" />
       <workItem from="1654089805537" duration="1088000" />
       <workItem from="1654091217638" duration="1042000" />
-      <workItem from="1654159616278" duration="27560000" />
+      <workItem from="1654159616278" duration="27645000" />
+      <workItem from="1654257476816" duration="8276000" />
     </task>
     <servers />
   </component>
@@ -162,6 +165,17 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../.." />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/KitchenTaskManagementTests/Test2a.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CatERing$CatERingApp.ic" NAME="CatERingApp Coverage Results" MODIFIED="1654015644240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

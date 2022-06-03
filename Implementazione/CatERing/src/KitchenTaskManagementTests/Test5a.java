@@ -2,6 +2,7 @@ package KitchenTaskManagementTests;
 
 import businesslogic.CatERing;
 import businesslogic.UseCaseLogicException;
+import businesslogic.event.ServiceInfo;
 import businesslogic.kitchentask.CookUnavailableException;
 import businesslogic.kitchentask.ToDoList;
 import businesslogic.menu.Menu;
@@ -21,22 +22,11 @@ public class Test5a {
         CatERing.getInstance().getUserManager().fakeLogin("Lidia");
 
         System.out.println("TEST GENERA FOGLIO");
-        //Usiamo un menú perché non é possibile risalire al menu del servizio
-        Menu m = CatERing.getInstance().getMenuManager().createMenu("Menu da copiare");
-
-        Section antipasti = CatERing.getInstance().getMenuManager().defineSection("Antipasti");
-        Section primi = CatERing.getInstance().getMenuManager().defineSection("Primi");
-        Section secondi = CatERing.getInstance().getMenuManager().defineSection("Secondi");
+        //Get menu from service
+        var service = ServiceInfo.loadServiceInfoForEvent(1, 2);
+        ToDoList tdl = CatERing.getInstance().getKitchenTaskManager().generateToDoList(service);
 
         ObservableList<Recipe> recipes = CatERing.getInstance().getRecipeManager().getRecipes();
-        CatERing.getInstance().getMenuManager().insertItem(recipes.get(0), antipasti);
-        CatERing.getInstance().getMenuManager().insertItem(recipes.get(1), antipasti);
-        CatERing.getInstance().getMenuManager().insertItem(recipes.get(6), secondi);
-        CatERing.getInstance().getMenuManager().insertItem(recipes.get(7), secondi);
-        CatERing.getInstance().getMenuManager().insertItem(recipes.get(3));
-        CatERing.getInstance().getMenuManager().insertItem(recipes.get(4));
-
-        ToDoList tdl = CatERing.getInstance().getKitchenTaskManager().generateToDoList(m);
 
         TurnTable tt = CatERing.getInstance().getKitchenTaskManager().getTurnTable();
 
@@ -56,8 +46,6 @@ public class Test5a {
         CatERing.getInstance().getKitchenTaskManager().updateTask(toUpdate,recipes.get(3));
 
         System.out.println(tdl);
-
-        CatERing.getInstance().getMenuManager().deleteMenu(m);
     }
 
 }

@@ -25,21 +25,12 @@ public class Test1 {
             CatERing.getInstance().getUserManager().fakeLogin("Lidia");
 
             System.out.println("TEST GENERA FOGLIO");
-            //Usiamo un menú perché non é possibile risalire al menu del servizio
-            Menu m = CatERing.getInstance().getMenuManager().createMenu("Menu da copiare");
 
-            Section antipasti = CatERing.getInstance().getMenuManager().defineSection("Antipasti");
-            Section primi = CatERing.getInstance().getMenuManager().defineSection("Primi");
-            Section secondi = CatERing.getInstance().getMenuManager().defineSection("Secondi");
+            //Get menu from service
+            var service = ServiceInfo.loadServiceInfoForEvent(1, 2);
+            ToDoList tdl = CatERing.getInstance().getKitchenTaskManager().generateToDoList(service);
 
             ObservableList<Recipe> recipes = CatERing.getInstance().getRecipeManager().getRecipes();
-            CatERing.getInstance().getMenuManager().insertItem(recipes.get(0), antipasti);
-            CatERing.getInstance().getMenuManager().insertItem(recipes.get(2), antipasti);
-            CatERing.getInstance().getMenuManager().insertItem(recipes.get(7), secondi);
-            CatERing.getInstance().getMenuManager().insertItem(recipes.get(3));
-            CatERing.getInstance().getMenuManager().insertItem(recipes.get(4));
-
-            ToDoList tdl = CatERing.getInstance().getKitchenTaskManager().generateToDoList(m);
 
             System.out.println(tdl);
 
@@ -99,11 +90,7 @@ public class Test1 {
             CatERing.getInstance().getKitchenTaskManager().addFeatures(toUpdate, Duration.ofMinutes(53), 0.5f);
             System.out.println(tdl);
 
-
-            //Delete so the database is clear
-            CatERing.getInstance().getMenuManager().deleteMenu(m);
-        }catch (Exception | CookUnavailableException e)
-        {
+        } catch (Exception | CookUnavailableException e) {
             e.printStackTrace();
         }
     }

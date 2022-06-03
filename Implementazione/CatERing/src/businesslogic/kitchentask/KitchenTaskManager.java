@@ -2,6 +2,7 @@ package businesslogic.kitchentask;
 
 import businesslogic.CatERing;
 import businesslogic.UseCaseLogicException;
+import businesslogic.event.ServiceInfo;
 import businesslogic.menu.Menu;
 import businesslogic.menu.MenuItem;
 import businesslogic.menu.Section;
@@ -11,6 +12,7 @@ import businesslogic.turn.Turn;
 import businesslogic.turn.TurnTable;
 import businesslogic.user.User;
 import javafx.collections.ObservableList;
+import persistence.KitchenTaskPersistence;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -20,7 +22,14 @@ public class KitchenTaskManager {
 
     ToDoList currentToDoList;
 
-    public ToDoList generateToDoList(Menu m) throws UseCaseLogicException {
+    ArrayList<KitchenTaskEventReceiver> receivers;
+
+    public KitchenTaskManager() {
+        receivers = new ArrayList<>();
+    }
+
+    public ToDoList generateToDoList(ServiceInfo service) throws UseCaseLogicException {
+        Menu m = service.getMenu();
         if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef()) throw new UseCaseLogicException();
         if (!m.isOwner(CatERing.getInstance().getUserManager().getCurrentUser())) throw new UseCaseLogicException();
         ToDoList tdl = new ToDoList();
@@ -38,6 +47,7 @@ public class KitchenTaskManager {
             }
         }
         currentToDoList = tdl;
+        notifyNewListCreated();
         return tdl;
     }
 
@@ -46,6 +56,7 @@ public class KitchenTaskManager {
             throw new UseCaseLogicException();
         KitchenTask kitchenTask = new KitchenTask(procedure);
         currentToDoList.add(kitchenTask);
+        notifyNewTaskAdded();
         return kitchenTask;
     }
 
@@ -79,26 +90,70 @@ public class KitchenTaskManager {
             }
         }
         currentToDoList.add(kitchenTask);
+        notifyNewTaskAdded();
         return kitchenTask;
     }
 
 
     public ToDoList addFeatures(KitchenTask kitchenTask, Duration esteemTime, float amount) {
+        notifyTaskChanged();
         return currentToDoList.addFeatures(kitchenTask, esteemTime, amount);
     }
 
     public void deleteProcedure(Procedure procedure) {
+        notifyTaskRemoved();
         currentToDoList.deleteProcedure(procedure);
     }
 
     public void updateTask(KitchenTask toUpdate, ArrayList<User> cooks) throws UseCaseLogicException {
+        notifyTaskChanged();
         toUpdate.updateTask(cooks);
     }
+
     public void updateTask(KitchenTask toUpdate, Turn turn) {
+        notifyTaskChanged();
         toUpdate.updateTask(turn);
     }
-    public void updateTask(KitchenTask toUpdate, Procedure procedure )
-    {
+
+    public void updateTask(KitchenTask toUpdate, Procedure procedure) {
+        notifyTaskChanged();
         toUpdate.updateTask(procedure);
+    }
+
+
+    //////////////////////////Event Receivers Methods//////////////////////////////
+
+    public void addEventReceiver(KitchenTaskEventReceiver kitchenTaskEventReceiver) {
+        this.receivers.add(kitchenTaskEventReceiver);
+    }
+
+    private void notifyNewListCreated() {
+        for (KitchenTaskEventReceiver receiver : receivers) {
+            receiver.updateNewListCreated(currentToDoList);
+        }
+    }
+
+    private void notifyListEmptied() {
+        for (KitchenTaskEventReceiver receiver : receivers) {
+            receiver.updateListEmptied();
+        }
+    }
+
+    private void notifyNewTaskAdded() {
+        for (KitchenTaskEventReceiver receiver : receivers) {
+            receiver.updateNewTaskAdded();
+        }
+    }
+
+    private void notifyTaskRemoved() {
+        for (KitchenTaskEventReceiver receiver : receivers) {
+            receiver.updateTaskRemoved();
+        }
+    }
+
+    private void notifyTaskChanged() {
+        for (KitchenTaskEventReceiver receiver : receivers) {
+            receiver.updateTaskChanged();
+        }
     }
 }

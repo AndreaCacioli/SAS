@@ -15,6 +15,13 @@ public class ToDoList {
         tasks = new ArrayList<>();
     }
 
+    public static void saveNewToDoList(ToDoList tdl) {
+        String newTDLUpdate = "INSERT INTO catering.ToDoLists (idService, idCompito) VALUES (?, ?);";
+
+        //TODO finish the database update
+
+    }
+
     public void add(KitchenTask kitchenTask) {
         tasks.add(kitchenTask);
     }
