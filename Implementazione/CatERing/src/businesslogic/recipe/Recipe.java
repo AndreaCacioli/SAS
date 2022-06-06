@@ -18,6 +18,11 @@ public class Recipe extends Procedure {
 
     }
 
+    @Override
+    public int getDataBaseId() {
+       return id;
+    }
+
     public Recipe(String name) {
         id = 0;
         this.name = name;

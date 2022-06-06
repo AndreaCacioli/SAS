@@ -2,7 +2,12 @@ package businesslogic.kitchentask;
 
 import businesslogic.menu.Menu;
 import businesslogic.recipe.Procedure;
+import persistence.BatchUpdateHandler;
+import persistence.PersistenceManager;
 
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,15 +15,27 @@ import java.util.Comparator;
 
 public class ToDoList {
     private ArrayList<KitchenTask> tasks;
+    int serviceId;
 
-    public ToDoList() {
+    public ToDoList(int id)
+    {
+        serviceId = id;
         tasks = new ArrayList<>();
     }
 
     public static void saveNewToDoList(ToDoList tdl) {
-        String newTDLUpdate = "INSERT INTO catering.ToDoLists (idService, idCompito) VALUES (?, ?);";
+        for(KitchenTask kitchenTask : tdl.tasks)
+        {
+            //Save The Kitchen task itself
+            KitchenTask.saveTask(kitchenTask);
 
-        //TODO finish the database update
+            //Save Kitchen Task position
+            String newTDLUpdate = "INSERT INTO catering.ToDoLists (idService, idCompito) VALUES (" + tdl.serviceId +
+                    ", " + kitchenTask.getId() +
+                    ");";
+            PersistenceManager.executeUpdate(newTDLUpdate);
+        }
+
 
     }
 
@@ -55,7 +72,6 @@ public class ToDoList {
     }
 
     public void deleteProcedure(Procedure procedure) {
-        //TODO change if we do not identify the procedure/kitchen task with an id
         tasks.removeIf(kt -> kt.getProcedure().getName().equals(procedure.getName()));
     }
 }

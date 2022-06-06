@@ -12,18 +12,24 @@ public class Turn {
     private ArrayList<Integer> availableCooksIds;
     int id;
 
-    public Turn(int id)
+
+    public int getId() {
+        return id;
+    }
+
+    public static Turn loadTurnById(int id)
     {
-        this.id = id;
-        availableCooksIds = new ArrayList<>();
+        Turn t = new Turn();
+        t.id = id;
+        t.availableCooksIds = new ArrayList<>();
         //Ask db for availabilities
         PersistenceManager.executeQuery("Select * FROM Availability WHERE idTurn = " + id, new ResultHandler() {
             @Override
             public void handle(ResultSet rs) throws SQLException {
-                availableCooksIds.add(rs.getInt("idUser"));
+                t.availableCooksIds.add(rs.getInt("idUser"));
             }
         });
-
+        return t;
     }
 
     public void addAvailability(User u)

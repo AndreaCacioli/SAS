@@ -32,7 +32,7 @@ public class KitchenTaskManager {
         Menu m = service.getMenu();
         if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef()) throw new UseCaseLogicException();
         if (!m.isOwner(CatERing.getInstance().getUserManager().getCurrentUser())) throw new UseCaseLogicException();
-        ToDoList tdl = new ToDoList();
+        ToDoList tdl = new ToDoList(service.getId());
         ObservableList<MenuItem> freeItems = m.getFreeItems();
         for (MenuItem item : freeItems) {
             KitchenTask kitchenTask = new KitchenTask(item);

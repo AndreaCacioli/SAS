@@ -17,7 +17,7 @@ public class TurnTable {
         PersistenceManager.executeQuery("SELECT * FROM Turns", new ResultHandler() {
             @Override
             public void handle(ResultSet rs) throws SQLException {
-               turns.add(new Turn(rs.getInt("id")));
+               turns.add(Turn.loadTurnById(rs.getInt("id")));
             }
         });
     }
