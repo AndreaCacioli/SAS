@@ -1,9 +1,11 @@
 package businesslogic.kitchentask;
 
+import businesslogic.event.ServiceInfo;
 import businesslogic.menu.Menu;
 import businesslogic.recipe.Procedure;
 import persistence.BatchUpdateHandler;
 import persistence.PersistenceManager;
+import persistence.ResultHandler;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -30,12 +32,41 @@ public class ToDoList {
             KitchenTask.saveTask(kitchenTask);
 
             //Save Kitchen Task position
-            String newTDLUpdate = "INSERT INTO catering.ToDoLists (idService, idCompito) VALUES (" + tdl.serviceId +
+            String newTDLUpdate = "INSERT INTO catering.ToDoLists (idService, idTask) VALUES (" + tdl.serviceId +
                     ", " + kitchenTask.getId() +
                     ");";
             PersistenceManager.executeUpdate(newTDLUpdate);
         }
 
+
+    }
+
+    private static ToDoList loadToDoListWithId(int id) {
+        ToDoList ret = new ToDoList(id);
+        ArrayList<Integer> taskIds = new ArrayList<>();
+        PersistenceManager.executeQuery("SELECT * FROM ToDoLists WHERE idService = " + id, new ResultHandler() {
+            @Override
+            public void handle(ResultSet rs) throws SQLException {
+                taskIds.add(rs.getInt("idTask"));
+            }
+        });
+        for (KitchenTask kitchenTask : KitchenTask.getAllTasks())
+        {
+            if(taskIds.contains(kitchenTask.getId())) ret.tasks.add(kitchenTask);
+        }
+        return ret;
+    }
+
+    public static ToDoList loadToDoList(ServiceInfo service) {
+        return loadToDoListWithId(service.getId());
+    }
+
+    public static void clearList(ToDoList tdl) {
+        PersistenceManager.executeUpdate("DELETE FROM ToDoLists WHERE idService = " + tdl.serviceId);
+        for(KitchenTask kt : tdl.tasks)
+        {
+            PersistenceManager.executeUpdate("DELETE FROM KitchenTasks WHERE id = " + kt.getId());
+        }
 
     }
 
@@ -73,5 +104,9 @@ public class ToDoList {
 
     public void deleteProcedure(Procedure procedure) {
         tasks.removeIf(kt -> kt.getProcedure().getName().equals(procedure.getName()));
+    }
+
+    public void clear() {
+        tasks.clear();
     }
 }

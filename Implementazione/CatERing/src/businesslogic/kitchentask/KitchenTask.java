@@ -34,12 +34,15 @@ public class KitchenTask {
 
     public KitchenTask(MenuItem item) {
         this.procedure = item.getItemRecipe();
-        id = getMaxId() + 1;
     }
 
     public KitchenTask(Procedure procedure) {
         this.procedure = procedure;
-        id = getMaxId() + 1;
+    }
+
+    public static void updateTask(KitchenTask kitchenTask) {
+        PersistenceManager.executeUpdate("DELETE FROM KitchenTasks WHERE id = " + kitchenTask.getId());
+        saveTask(kitchenTask);
     }
 
     public ArrayList<User> getCooks() {
@@ -124,8 +127,8 @@ public class KitchenTask {
         ArrayList<KitchenTask> ret = new ArrayList<>();
         PersistenceManager.executeQuery("SELECT * " +
                 "FROM KitchenTasks " +
-                "JOIN Turns on (KitchenTasks.idTurn= Turns.id) " +
-                "JOIN Recipes on (KitchenTasks.idProcedure = Recipes.id)", new ResultHandler() {
+                "LEFT JOIN Turns on (KitchenTasks.idTurn= Turns.id) " +
+                "LEFT JOIN Recipes on (KitchenTasks.idProcedure = Recipes.id)", new ResultHandler() {
             @Override
             public void handle(ResultSet rs) throws SQLException {
                 int idTask = rs.getInt("id");
@@ -135,14 +138,14 @@ public class KitchenTask {
                         "WHERE CookTask.idTask = " + idTask, new ResultHandler() {
                     @Override
                     public void handle(ResultSet rs1) throws SQLException {
-
                         User u = User.loadUserById(rs1.getInt("CookTask.idCook"));
                         cooks.add(u);
                     }
                 });
                 Turn turn = Turn.loadTurnById(rs.getInt("idTurn"));
                 Procedure p = Recipe.loadRecipeById(rs.getInt("idProcedure"));
-                KitchenTask kitchenTask = new KitchenTask(cooks, turn, p,Duration.parse(rs.getString("duration")), rs.getFloat("amount"), idTask);
+                String durationString = rs.getString("duration");
+                KitchenTask kitchenTask = new KitchenTask(cooks, turn, p,durationString == null ? null : Duration.parse(durationString), rs.getFloat("amount"), idTask);
                 ret.add(kitchenTask);
             }
         });
@@ -173,5 +176,8 @@ public class KitchenTask {
                 ", " + time +
                 ");";
         PersistenceManager.executeUpdate(newKitchenTaskUpdate);
+        kitchenTask.id = getMaxId();
     }
+
+
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<diagram program="umlet" version="15.0.0">
   <zoom_level>6</zoom_level>
   <element>
     <id>Relation</id>
@@ -717,14 +717,14 @@ recipe</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>462</x>
-      <y>402</y>
-      <w>150</w>
-      <h>24</h>
+      <x>456</x>
+      <y>396</y>
+      <w>102</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.procedure = recipe</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;10.0;70.0;20.0;20.0;20.0</additional_attributes>
+    <additional_attributes>20.0;20.0;80.0;20.0;80.0;30.0;30.0;30.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>

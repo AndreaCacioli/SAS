@@ -7,18 +7,17 @@ import businesslogic.kitchentask.ToDoList;
 public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
     @Override
     public void updateNewListCreated(ToDoList tdl) {
-        //TODO Add the list to the database
         ToDoList.saveNewToDoList(tdl);
     }
 
     @Override
-    public void updateListEmptied() {
-        //TODO Make sure list is empty
+    public void updateListEmptied(ToDoList tdl) {
+        ToDoList.clearList(tdl);
     }
 
     @Override
-    public void updateNewTaskAdded() {
-        //TODO add task to db
+    public void updateNewTaskAdded(KitchenTask kitchenTask) {
+        KitchenTask.updateTask(kitchenTask);
     }
 
     @Override
@@ -27,7 +26,7 @@ public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
     }
 
     @Override
-    public void updateTaskChanged() {
+    public void updateTaskChanged(KitchenTask kitchenTask) {
         //TODO update the task
     }
 }

@@ -5,13 +5,13 @@ import businesslogic.UseCaseLogicException;
 import businesslogic.event.ServiceInfo;
 import businesslogic.kitchentask.ToDoList;
 
-public class Test1a {
+public class Test1b {
     public static void main(String[] args) throws UseCaseLogicException {
         System.out.println("TEST FAKE LOGIN");
         CatERing.getInstance().getUserManager().fakeLogin("Lidia");
 
         var service = ServiceInfo.loadServiceInfoForEvent(1, 2);
-        ToDoList tdl = CatERing.getInstance().getKitchenTaskManager().openToDoList(service);
+        ToDoList tdl = CatERing.getInstance().getKitchenTaskManager().emptyToDoList(service);
         System.out.println(tdl);
 
     }

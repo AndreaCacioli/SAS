@@ -3,11 +3,11 @@ package businesslogic.kitchentask;
 public interface KitchenTaskEventReceiver {
     void updateNewListCreated(ToDoList tdl);
 
-    void updateListEmptied();
+    void updateListEmptied(ToDoList tdl);
 
-    void updateNewTaskAdded();
+    void updateNewTaskAdded(KitchenTask kitchenTask);
 
     void updateTaskRemoved();
 
-    void updateTaskChanged();
+    void updateTaskChanged(KitchenTask kitchenTask);
 }

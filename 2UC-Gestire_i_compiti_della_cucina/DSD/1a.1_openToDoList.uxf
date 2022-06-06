@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<diagram program="umlet" version="15.0.0">
   <zoom_level>10</zoom_level>
   <element>
     <id>Relation</id>
@@ -81,8 +81,7 @@ openToDoList(service)</panel_attributes>
       <w>290</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>service:
-Service</panel_attributes>
+    <panel_attributes>ToDoList</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -105,7 +104,7 @@ Service</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-currentToDoList = getToDoList()</panel_attributes>
+currentToDoList = loadToDoList(service)</panel_attributes>
     <additional_attributes>10.0;20.0;350.0;20.0</additional_attributes>
   </element>
   <element>
@@ -164,7 +163,7 @@ currentToDoList</panel_attributes>
     </coordinates>
     <panel_attributes>alt 
 fg=#761C8C
-[user.isChef()]
+[user.isChef() &amp;&amp; service.menu.isOwner(user)]
 --
 
 

@@ -76,4 +76,15 @@ public class ServiceInfo implements EventItemInfo {
         }
         return null;
     }
+
+    public boolean hasToDoList() {
+        final Boolean[] ret = {false};
+        PersistenceManager.executeQuery("SELECT * FROM ToDoLists WHERE idService = " + this.getId(), new ResultHandler() {
+            @Override
+            public void handle(ResultSet rs) throws SQLException {
+                ret[0] = true;
+            }
+        });
+        return ret[0];
+    }
 }

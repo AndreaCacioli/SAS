@@ -68,18 +68,39 @@
       <recent name="businesslogic.kitchentask" />
       <recent name="persistence" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="KitchenTaskManagementTests" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Test1">
-    <configuration name="CatERingApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CatERingApp" />
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KitchenTaskManagementTests.Test1" />
       <module name="CatERing" />
-      <option name="VM_PARAMETERS" value="--module-path $PATH_TO_FX$  --add-modules=javafx.controls,javafx.fxml --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="KitchenTaskManagementTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KitchenTaskManagementTests.Test1" />
+    <configuration name="Test1a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KitchenTaskManagementTests.Test1a" />
+      <module name="CatERing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="KitchenTaskManagementTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1b" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KitchenTaskManagementTests.Test1b" />
       <module name="CatERing" />
       <extension name="coverage">
         <pattern>
@@ -119,10 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test1b" />
         <item itemvalue="Application.Test1" />
+        <item itemvalue="Application.Test1a" />
         <item itemvalue="Application.Test2a" />
         <item itemvalue="Application.Test5a" />
-        <item itemvalue="Application.CatERingApp" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +165,7 @@
       <workItem from="1654091217638" duration="1042000" />
       <workItem from="1654159616278" duration="27645000" />
       <workItem from="1654257476816" duration="8326000" />
-      <workItem from="1654506341456" duration="5828000" />
+      <workItem from="1654506341456" duration="12953000" />
     </task>
     <servers />
   </component>
