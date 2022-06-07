@@ -112,8 +112,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test5a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KitchenTaskManagementTests.Test5a" />
+    <configuration name="Test2a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KitchenTaskManagementTests.Test2a" />
       <module name="CatERing" />
       <extension name="coverage">
         <pattern>
@@ -125,8 +125,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test5b" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KitchenTaskManagementTests.Test5b" />
+    <configuration name="Test5a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KitchenTaskManagementTests.Test5a" />
       <module name="CatERing" />
       <extension name="coverage">
         <pattern>
@@ -141,10 +141,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test1b" />
-        <item itemvalue="Application.Test1a" />
         <item itemvalue="Application.Test1" />
-        <item itemvalue="Application.Test5b" />
         <item itemvalue="Application.Test5a" />
+        <item itemvalue="Application.Test1a" />
+        <item itemvalue="Application.Test2a" />
       </list>
     </recent_temporary>
   </component>
@@ -167,6 +167,7 @@
       <workItem from="1654257476816" duration="8326000" />
       <workItem from="1654506341456" duration="12953000" />
       <workItem from="1654603422428" duration="6440000" />
+      <workItem from="1654610907382" duration="5945000" />
     </task>
     <servers />
   </component>

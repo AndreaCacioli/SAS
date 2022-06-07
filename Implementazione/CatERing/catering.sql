@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Creato il: Giu 02, 2022 alle 18:27
+-- Creato il: Giu 07, 2022 alle 17:48
 -- Versione del server: 10.4.21-MariaDB
 -- Versione PHP: 8.1.6
 
@@ -43,6 +43,17 @@ INSERT INTO `Availability` (`idUser`, `idTurn`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Struttura della tabella `CookTask`
+--
+
+CREATE TABLE `CookTask` (
+  `idCook` int(11) NOT NULL,
+  `idTask` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Struttura della tabella `Events`
 --
 
@@ -71,10 +82,11 @@ INSERT INTO `Events` (`id`, `name`, `date_start`, `date_end`, `expected_particip
 --
 
 CREATE TABLE `KitchenTasks` (
-  `idCook` int(11) NOT NULL,
   `id` bigint(20) UNSIGNED NOT NULL,
-  `idTurn` int(11) NOT NULL,
-  `idProcedure` int(11) NOT NULL
+  `idTurn` int(11) DEFAULT NULL,
+  `idProcedure` int(11) DEFAULT NULL,
+  `amount` float DEFAULT NULL,
+  `duration` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -183,7 +195,27 @@ INSERT INTO `MenuFeatures` (`menu_id`, `name`, `value`) VALUES
 (63, 'Buffet', 0),
 (63, 'Richiede cucina', 0),
 (63, 'Finger food', 0),
-(63, 'Piatti caldi', 0);
+(63, 'Piatti caldi', 0),
+(66, 'Richiede cuoco', 0),
+(66, 'Buffet', 0),
+(66, 'Richiede cucina', 0),
+(66, 'Finger food', 0),
+(66, 'Piatti caldi', 0),
+(68, 'Richiede cuoco', 0),
+(68, 'Buffet', 0),
+(68, 'Richiede cucina', 0),
+(68, 'Finger food', 0),
+(68, 'Piatti caldi', 0),
+(72, 'Richiede cuoco', 0),
+(72, 'Buffet', 0),
+(72, 'Richiede cucina', 0),
+(72, 'Finger food', 0),
+(72, 'Piatti caldi', 0),
+(73, 'Richiede cuoco', 0),
+(73, 'Buffet', 0),
+(73, 'Richiede cucina', 0),
+(73, 'Finger food', 0),
+(73, 'Piatti caldi', 0);
 
 -- --------------------------------------------------------
 
@@ -324,7 +356,31 @@ INSERT INTO `MenuItems` (`id`, `menu_id`, `section_id`, `description`, `recipe_i
 (286, 63, 133, 'Hamburger con bacon e cipolla caramellata', 7, 0),
 (287, 63, 133, 'Salmone al forno', 8, 1),
 (288, 63, 0, 'Insalata di riso', 4, 0),
-(289, 63, 0, 'Penne al sugo di baccalà', 5, 1);
+(289, 63, 0, 'Penne al sugo di baccalà', 5, 1),
+(304, 66, 140, 'Vitello tonnato', 1, 0),
+(305, 66, 140, 'Alici marinate', 3, 1),
+(306, 66, 142, 'Salmone al forno', 8, 0),
+(307, 66, 0, 'Insalata di riso', 4, 0),
+(308, 66, 0, 'Penne al sugo di baccalà', 5, 1),
+(314, 68, 146, 'Vitello tonnato', 1, 0),
+(315, 68, 146, 'Carpaccio di spada', 2, 1),
+(316, 68, 146, 'Alici marinate', 3, 2),
+(317, 68, 148, 'Hamburger con bacon e cipolla caramellata', 7, 0),
+(318, 68, 148, 'Salmone al forno', 8, 1),
+(319, 68, 0, 'Insalata di riso', 4, 0),
+(320, 68, 0, 'Penne al sugo di baccalà', 5, 1),
+(342, 72, 158, 'Vitello tonnato', 1, 0),
+(343, 72, 158, 'Carpaccio di spada', 2, 1),
+(344, 72, 160, 'Hamburger con bacon e cipolla caramellata', 7, 0),
+(345, 72, 160, 'Salmone al forno', 8, 1),
+(346, 72, 0, 'Insalata di riso', 4, 0),
+(347, 72, 0, 'Penne al sugo di baccalà', 5, 1),
+(348, 73, 161, 'Vitello tonnato', 1, 0),
+(349, 73, 161, 'Carpaccio di spada', 2, 1),
+(350, 73, 163, 'Hamburger con bacon e cipolla caramellata', 7, 0),
+(351, 73, 163, 'Salmone al forno', 8, 1),
+(352, 73, 0, 'Insalata di riso', 4, 0),
+(353, 73, 0, 'Penne al sugo di baccalà', 5, 1);
 
 -- --------------------------------------------------------
 
@@ -416,17 +472,19 @@ INSERT INTO `MenuSections` (`id`, `menu_id`, `name`, `position`) VALUES
 (118, 58, 'Secondi', 2),
 (131, 63, 'Antipasti', 0),
 (132, 63, 'Primi', 1),
-(133, 63, 'Secondi', 2);
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `Procedures`
---
-
-CREATE TABLE `Procedures` (
-  `id` bigint(20) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+(133, 63, 'Secondi', 2),
+(140, 66, 'Antipasti', 0),
+(141, 66, 'Primi', 1),
+(142, 66, 'Secondi', 2),
+(146, 68, 'Antipasti', 0),
+(147, 68, 'Primi', 1),
+(148, 68, 'Secondi', 2),
+(158, 72, 'Antipasti', 0),
+(159, 72, 'Primi', 1),
+(160, 72, 'Secondi', 2),
+(161, 73, 'Antipasti', 0),
+(162, 73, 'Primi', 1),
+(163, 73, 'Secondi', 2);
 
 -- --------------------------------------------------------
 
@@ -498,14 +556,14 @@ CREATE TABLE `Services` (
 --
 
 INSERT INTO `Services` (`id`, `event_id`, `name`, `proposed_menu_id`, `approved_menu_id`, `service_date`, `time_start`, `time_end`, `expected_participants`) VALUES
-(1, 2, 'Cena', 0, 0, '2020-08-13', '20:00:00', '23:30:00', 25),
-(2, 1, 'Coffee break mattino', 0, 0, '2020-09-25', '10:30:00', '11:30:00', 100),
-(3, 1, 'Colazione di lavoro', 0, 0, '2020-09-25', '13:00:00', '14:00:00', 80),
-(4, 1, 'Coffee break pomeriggio', 0, 0, '2020-09-25', '16:00:00', '16:30:00', 100),
-(5, 1, 'Cena sociale', 0, 0, '2020-09-25', '20:00:00', '22:30:00', 40),
-(6, 3, 'Pranzo giorno 1', 0, 0, '2020-10-02', '12:00:00', '15:00:00', 200),
-(7, 3, 'Pranzo giorno 2', 0, 0, '2020-10-03', '12:00:00', '15:00:00', 300),
-(8, 3, 'Pranzo giorno 3', 0, 0, '2020-10-04', '12:00:00', '15:00:00', 400);
+(1, 2, 'Cena', 0, 25, '2020-08-13', '20:00:00', '23:30:00', 25),
+(2, 1, 'Coffee break mattino', 0, 25, '2020-09-25', '10:30:00', '11:30:00', 100),
+(3, 1, 'Colazione di lavoro', 0, 25, '2020-09-25', '13:00:00', '14:00:00', 80),
+(4, 1, 'Coffee break pomeriggio', 0, 25, '2020-09-25', '16:00:00', '16:30:00', 100),
+(5, 1, 'Cena sociale', 0, 25, '2020-09-25', '20:00:00', '22:30:00', 40),
+(6, 3, 'Pranzo giorno 1', 0, 25, '2020-10-02', '12:00:00', '15:00:00', 200),
+(7, 3, 'Pranzo giorno 2', 0, 25, '2020-10-03', '12:00:00', '15:00:00', 300),
+(8, 3, 'Pranzo giorno 3', 0, 25, '2020-10-04', '12:00:00', '15:00:00', 400);
 
 -- --------------------------------------------------------
 
@@ -515,7 +573,7 @@ INSERT INTO `Services` (`id`, `event_id`, `name`, `proposed_menu_id`, `approved_
 
 CREATE TABLE `ToDoLists` (
   `idService` int(11) NOT NULL,
-  `idCompito` int(11) NOT NULL
+  `idTask` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -629,12 +687,6 @@ ALTER TABLE `MenuSections`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indici per le tabelle `Procedures`
---
-ALTER TABLE `Procedures`
-  ADD UNIQUE KEY `id` (`id`);
-
---
 -- Indici per le tabelle `Recipes`
 --
 ALTER TABLE `Recipes`
@@ -678,31 +730,25 @@ ALTER TABLE `Events`
 -- AUTO_INCREMENT per la tabella `KitchenTasks`
 --
 ALTER TABLE `KitchenTasks`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=277;
 
 --
 -- AUTO_INCREMENT per la tabella `MenuItems`
 --
 ALTER TABLE `MenuItems`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=297;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=378;
 
 --
 -- AUTO_INCREMENT per la tabella `Menus`
 --
 ALTER TABLE `Menus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
 -- AUTO_INCREMENT per la tabella `MenuSections`
 --
 ALTER TABLE `MenuSections`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=137;
-
---
--- AUTO_INCREMENT per la tabella `Procedures`
---
-ALTER TABLE `Procedures`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=176;
 
 --
 -- AUTO_INCREMENT per la tabella `Recipes`

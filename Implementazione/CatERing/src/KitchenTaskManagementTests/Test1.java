@@ -2,11 +2,9 @@ package KitchenTaskManagementTests;
 
 import businesslogic.CatERing;
 import businesslogic.event.ServiceInfo;
-import businesslogic.kitchentask.CookUnavailableException;
+import businesslogic.kitchentask.ServiceException;
 import businesslogic.kitchentask.KitchenTask;
 import businesslogic.kitchentask.ToDoList;
-import businesslogic.menu.Menu;
-import businesslogic.menu.Section;
 import businesslogic.recipe.Recipe;
 import businesslogic.turn.Turn;
 import businesslogic.turn.TurnTable;
@@ -84,10 +82,14 @@ public class Test1 {
 
 
             System.out.println("TEST ADD FEATURES");
-            CatERing.getInstance().getKitchenTaskManager().addFeatures(toUpdate, Duration.ofMinutes(53), 0.5f);
+            CatERing.getInstance().getKitchenTaskManager().addFeatures(toUpdate, Duration.ofMinutes(59), 0.5f);
             System.out.println(tdl);
 
-        } catch (Exception | CookUnavailableException e) {
+            System.out.println("TEST REMOVE FEATURES");
+            CatERing.getInstance().getKitchenTaskManager().addFeatures(toUpdate, Duration.ofMinutes(59), null);
+            System.out.println(tdl);
+
+        } catch (Exception | ServiceException e) {
             e.printStackTrace();
         }
     }

@@ -62,7 +62,7 @@ public class KitchenTask {
 
     @Override
     public String toString() {
-        return "KitchenTask{" +
+        return "KitchenTask # " + this.id +  "{" +
                 "cook=" + cooks +
                 ", turn=" + turn +
                 ", procedure=" + procedure +
@@ -99,6 +99,7 @@ public class KitchenTask {
 
     public void updateTask(ArrayList<User> cooks) throws UseCaseLogicException {
         if (cooks == null) {
+            //This will never be done
             this.cooks = null;
             return;
         }

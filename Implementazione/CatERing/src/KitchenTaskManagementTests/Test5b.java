@@ -3,11 +3,9 @@ package KitchenTaskManagementTests;
 import businesslogic.CatERing;
 import businesslogic.UseCaseLogicException;
 import businesslogic.event.ServiceInfo;
-import businesslogic.kitchentask.CookUnavailableException;
+import businesslogic.kitchentask.ServiceException;
 import businesslogic.kitchentask.ToDoList;
-import businesslogic.menu.Menu;
 import businesslogic.menu.MenuException;
-import businesslogic.menu.Section;
 import businesslogic.recipe.Recipe;
 import businesslogic.turn.TurnTable;
 import businesslogic.user.User;
@@ -16,7 +14,7 @@ import javafx.collections.ObservableList;
 import java.util.ArrayList;
 
 public class Test5b {
-    public static void main(String[] args) throws UseCaseLogicException, CookUnavailableException, MenuException {
+    public static void main(String[] args) throws UseCaseLogicException, ServiceException, MenuException {
         {
 
             System.out.println("TEST FAKE LOGIN");

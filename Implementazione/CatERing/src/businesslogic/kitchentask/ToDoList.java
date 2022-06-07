@@ -17,10 +17,10 @@ import java.util.Comparator;
 
 public class ToDoList {
     private ArrayList<KitchenTask> tasks;
-    int serviceId;
+    ServiceInfo service;
 
-    public ToDoList(int id) {
-        serviceId = id;
+    public ToDoList(ServiceInfo service) {
+        this.service = service;
         tasks = new ArrayList<>();
     }
 
@@ -31,10 +31,10 @@ public class ToDoList {
         }
     }
 
-    private static ToDoList loadToDoListWithId(int id) {
-        ToDoList ret = new ToDoList(id);
+    private static ToDoList loadToDoListWithId(ServiceInfo service) {
+        ToDoList ret = new ToDoList(service);
         ArrayList<Integer> taskIds = new ArrayList<>();
-        PersistenceManager.executeQuery("SELECT * FROM ToDoLists WHERE idService = " + id, new ResultHandler() {
+        PersistenceManager.executeQuery("SELECT * FROM ToDoLists WHERE idService = " + service.getId(), new ResultHandler() {
             @Override
             public void handle(ResultSet rs) throws SQLException {
                 taskIds.add(rs.getInt("idTask"));
@@ -47,11 +47,11 @@ public class ToDoList {
     }
 
     public static ToDoList loadToDoList(ServiceInfo service) {
-        return loadToDoListWithId(service.getId());
+        return loadToDoListWithId(service);
     }
 
     public static void clearList(ToDoList tdl) {
-        PersistenceManager.executeUpdate("DELETE FROM ToDoLists WHERE idService = " + tdl.serviceId);
+        PersistenceManager.executeUpdate("DELETE FROM ToDoLists WHERE idService = " + tdl.service.getId());
         for (KitchenTask kt : tdl.tasks) {
             KitchenTask.deleteTask(kt);
         }
@@ -60,7 +60,7 @@ public class ToDoList {
 
     public static void saveNewTask(ToDoList currentToDoList, KitchenTask kitchenTask) {
         String update = "INSERT INTO ToDoLists (idService, idTask) VALUES " +
-                "(" + currentToDoList.serviceId +
+                "(" + currentToDoList.service.getId() +
                 ", " + kitchenTask.getId() +
                 ");";
         PersistenceManager.executeUpdate(update);
@@ -86,8 +86,8 @@ public class ToDoList {
     public ToDoList addFeatures(KitchenTask kitchenTask, Duration esteemTime, Float amount) {
         for (KitchenTask kt : tasks) {
             if (kt.getProcedure().getName().compareTo(kitchenTask.getProcedure().getName()) == 0) {
-                if (esteemTime != null) kt.setDuration(esteemTime);
-                if (amount != null) kt.setAmount(amount);
+                kt.setDuration(esteemTime);
+                kt.setAmount(amount);
                 break;
             }
         }
@@ -95,14 +95,14 @@ public class ToDoList {
     }
 
     public ArrayList<KitchenTask> deleteProcedure(Procedure procedure) {
-        ArrayList<KitchenTask> ret = new ArrayList<>();
+        ArrayList<KitchenTask> removedTasks = new ArrayList<>();
         for (KitchenTask kt : tasks) {
             if (kt.getProcedure() != null && procedure != null && kt.getProcedure().getName().equals(procedure.getName())) {
-                ret.add(kt);
-                tasks.remove(kt);
+                removedTasks.add(kt);
             }
         }
-        return ret;
+        tasks.removeAll(removedTasks);
+        return removedTasks;
     }
 
     public void clear() {

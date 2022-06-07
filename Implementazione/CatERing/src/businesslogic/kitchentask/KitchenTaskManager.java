@@ -26,40 +26,35 @@ public class KitchenTaskManager {
         receivers = new ArrayList<>();
     }
 
-    public ToDoList generateToDoList(ServiceInfo service) throws UseCaseLogicException {
-        ////////////TODO Aggiunta///////////
+    public ToDoList generateToDoList(ServiceInfo service) throws UseCaseLogicException, ServiceException {
         if (service.hasToDoList()) {
-            System.err.println("The service already has a tdl associated to it!");
-            return null;
+           throw new ServiceException();
         }
-
         Menu m = service.getMenu();
         if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef()) throw new UseCaseLogicException();
         if (!m.isOwner(CatERing.getInstance().getUserManager().getCurrentUser())) throw new UseCaseLogicException();
-        ToDoList tdl = new ToDoList(service.getId());
+
+        currentToDoList = new ToDoList(service);
         ObservableList<MenuItem> freeItems = m.getFreeItems();
         for (MenuItem item : freeItems) {
             KitchenTask kitchenTask = new KitchenTask(item);
-            tdl.add(kitchenTask);
+            currentToDoList.add(kitchenTask);
         }
         ObservableList<Section> sections = m.getSections();
         for (Section section : sections) {
             ObservableList<MenuItem> items = section.getItems();
             for (MenuItem item : items) {
                 KitchenTask kitchenTask = new KitchenTask(item);
-                tdl.add(kitchenTask);
+                currentToDoList.add(kitchenTask);
             }
         }
-        currentToDoList = tdl;
         notifyNewListCreated();
-        return tdl;
+        return currentToDoList;
     }
 
-    public ToDoList openToDoList(ServiceInfo service) throws UseCaseLogicException {
+    public ToDoList openToDoList(ServiceInfo service) throws UseCaseLogicException, ServiceException {
         if (!service.hasToDoList()) {
-            //TODO riguardare se é fatto bene
-            System.err.println("The current service doesn't have a list associated");
-            return null;
+          throw new ServiceException();
         }
         Menu m = service.getMenu();
         if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef()) throw new UseCaseLogicException();
@@ -88,7 +83,7 @@ public class KitchenTaskManager {
     }
 
 
-    public KitchenTask addTask(Procedure procedure, ArrayList<User> cooks, Turn turn) throws UseCaseLogicException, CookUnavailableException {
+    public KitchenTask addTask(Procedure procedure, ArrayList<User> cooks, Turn turn) throws UseCaseLogicException, ServiceException {
         if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef() || currentToDoList == null)
             throw new UseCaseLogicException();
         KitchenTask kitchenTask = new KitchenTask(procedure);
@@ -110,13 +105,17 @@ public class KitchenTaskManager {
     }
 
 
-    public ToDoList addFeatures(KitchenTask kitchenTask, Duration esteemTime, float amount) {
+    public ToDoList addFeatures(KitchenTask kitchenTask, Duration esteemTime, Float amount) throws UseCaseLogicException {
+        if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef() || currentToDoList == null || !currentToDoList.contains(kitchenTask))
+            throw new UseCaseLogicException();
         currentToDoList.addFeatures(kitchenTask, esteemTime, amount);
         notifyTaskChanged(kitchenTask);
         return currentToDoList;
     }
 
-    public void deleteProcedure(Procedure procedure) {
+    public void deleteProcedure(Procedure procedure) throws UseCaseLogicException {
+        if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef() || currentToDoList == null)
+            throw new UseCaseLogicException();
         ArrayList<KitchenTask> removedTasks = currentToDoList.deleteProcedure(procedure);
         for (KitchenTask kt : removedTasks) {
             notifyTaskRemoved(kt);
@@ -124,20 +123,39 @@ public class KitchenTaskManager {
     }
 
     public void updateTask(KitchenTask toUpdate, ArrayList<User> cooks) throws UseCaseLogicException {
-        notifyTaskChanged(toUpdate);
+        if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef() || currentToDoList == null)
+            throw new UseCaseLogicException();
         toUpdate.updateTask(cooks);
+        notifyTaskChanged(toUpdate);
     }
 
-    public void updateTask(KitchenTask toUpdate, Turn turn) {
-        notifyTaskChanged(toUpdate);
+    public void updateTask(KitchenTask toUpdate, Turn turn) throws UseCaseLogicException {
+        if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef() || currentToDoList == null)
+            throw new UseCaseLogicException();
         toUpdate.updateTask(turn);
-    }
-
-    public void updateTask(KitchenTask toUpdate, Procedure procedure) {
         notifyTaskChanged(toUpdate);
-        toUpdate.updateTask(procedure);
     }
 
+    public void updateTask(KitchenTask toUpdate, Procedure procedure) throws UseCaseLogicException {
+        if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef() || currentToDoList == null)
+            throw new UseCaseLogicException();
+        toUpdate.updateTask(procedure);
+        notifyTaskChanged(toUpdate);
+    }
+
+    public ToDoList emptyToDoList(ServiceInfo service) throws UseCaseLogicException, ServiceException {
+        openToDoList(service);
+        notifyListEmptied();
+        currentToDoList.clear();
+        return currentToDoList;
+    }
+
+    public void deleteTask(KitchenTask toUpdate) throws UseCaseLogicException {
+        if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef() || currentToDoList == null || !currentToDoList.contains(toUpdate))
+            throw new UseCaseLogicException();
+        currentToDoList.deleteTask(toUpdate);
+        notifyTaskRemoved(toUpdate);
+    }
 
     //////////////////////////Event Receivers Methods//////////////////////////////
 
@@ -179,18 +197,5 @@ public class KitchenTaskManager {
         }
     }
 
-    public ToDoList emptyToDoList(ServiceInfo service) throws UseCaseLogicException {
-        openToDoList(service);
-        notifyListEmptied();
-        currentToDoList.clear();
-        return currentToDoList;
-    }
 
-    public void deleteTask(KitchenTask toUpdate) throws UseCaseLogicException {
-        if (!CatERing.getInstance().getUserManager().getCurrentUser().isChef() || currentToDoList == null || !currentToDoList.contains(toUpdate))
-            throw new UseCaseLogicException();
-        currentToDoList.deleteTask(toUpdate);
-        notifyTaskRemoved(toUpdate);
-
-    }
 }
