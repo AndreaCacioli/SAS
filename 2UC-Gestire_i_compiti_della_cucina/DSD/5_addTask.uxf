@@ -49,7 +49,7 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>448</x>
+      <x>632</x>
       <y>0</y>
       <w>272</w>
       <h>32</h>
@@ -129,7 +129,7 @@ create(procedure)</panel_attributes>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.procedure = procedure</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;10.0;80.0;50.0;10.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0;80.0;50.0;20.0;50.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -141,7 +141,7 @@ this.procedure = procedure</panel_attributes>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.turn = turn</panel_attributes>
-    <additional_attributes>10.0;10.0;90.0;10.0;90.0;60.0;10.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0;90.0;60.0;20.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -346,7 +346,7 @@ throw UseCaseLogicException</panel_attributes>
       <x>744</x>
       <y>208</y>
       <w>16</w>
-      <h>632</h>
+      <h>536</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -408,30 +408,6 @@ addCooks(cooks)</panel_attributes>
     <panel_attributes>lt=-&gt;&gt;&gt;
 setTurn(turn)</panel_attributes>
     <additional_attributes>10.0;20.0;490.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>352</x>
-      <y>720</y>
-      <w>408</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-setTurn(turn)</panel_attributes>
-    <additional_attributes>10.0;20.0;490.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>744</x>
-      <y>736</y>
-      <w>160</w>
-      <h>48</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-this.turn = turn</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;10.0;80.0;40.0;20.0;40.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
@@ -629,12 +605,12 @@ fg=#128C86
     <coordinates>
       <x>744</x>
       <y>624</y>
-      <w>592</w>
+      <w>584</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 add(c)</panel_attributes>
-    <additional_attributes>10.0;20.0;720.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;710.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -653,10 +629,10 @@ add(c)</panel_attributes>
       <x>1696</x>
       <y>104</y>
       <w>24</w>
-      <h>1008</h>
+      <h>1016</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1240.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1250.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -673,9 +649,9 @@ KitchenTaskEventReceiver</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>136</x>
+      <x>168</x>
       <y>928</y>
-      <w>1616</w>
+      <w>1584</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>LOOP for each
@@ -688,11 +664,11 @@ fg=blue</panel_attributes>
     <coordinates>
       <x>360</x>
       <y>880</y>
-      <w>200</w>
+      <w>208</w>
       <h>48</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-notifyNewTaskAdded()</panel_attributes>
+notifyNewTaskAdded(c)</panel_attributes>
     <additional_attributes>10.0;10.0;80.0;10.0;80.0;40.0;20.0;40.0</additional_attributes>
   </element>
   <element>
@@ -715,7 +691,18 @@ notifyNewTaskAdded()</panel_attributes>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-updateNewTaskAdded()</panel_attributes>
+updateNewTaskAdded(c)</panel_attributes>
     <additional_attributes>10.0;20.0;1660.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1312</x>
+      <y>640</y>
+      <w>16</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
   </element>
 </diagram>
