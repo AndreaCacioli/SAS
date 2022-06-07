@@ -22,25 +22,26 @@ public class Test5b {
             System.out.println("TEST FAKE LOGIN");
             CatERing.getInstance().getUserManager().fakeLogin("Lidia");
 
-            System.out.println("TEST GENERA FOGLIO");
-            //Get menu from service
+            System.out.println("TEST APRI FOGLIO");
             var service = ServiceInfo.loadServiceInfoForEvent(1, 2);
-            ToDoList tdl = CatERing.getInstance().getKitchenTaskManager().generateToDoList(service);
-
+            ToDoList tdl = CatERing.getInstance().getKitchenTaskManager().openToDoList(service);
             ObservableList<Recipe> recipes = CatERing.getInstance().getRecipeManager().getRecipes();
             TurnTable tt = CatERing.getInstance().getKitchenTaskManager().getTurnTable();
-
             CatERing.getInstance().getUserManager().fakeLogin("Marinella");
-
             ArrayList<User> cooks = new ArrayList<>();
             cooks.add(CatERing.getInstance().getUserManager().getCurrentUser());
-
             CatERing.getInstance().getUserManager().fakeLogin("Lidia");
 
             var toUpdate = CatERing.getInstance().getKitchenTaskManager().addTask(recipes.get(2),
                     null,
                     null);
 
+            System.out.println("Before: ");
+            System.out.println(tdl);
+
+            CatERing.getInstance().getKitchenTaskManager().deleteTask(toUpdate);
+
+            System.out.println("After: ");
             System.out.println(tdl);
 
         }

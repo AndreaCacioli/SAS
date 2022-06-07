@@ -1,5 +1,6 @@
 package businesslogic.kitchentask;
 
+import businesslogic.CatERing;
 import businesslogic.UseCaseLogicException;
 import businesslogic.menu.MenuItem;
 import businesslogic.recipe.Procedure;
@@ -41,8 +42,14 @@ public class KitchenTask {
     }
 
     public static void updateTask(KitchenTask kitchenTask) {
+        deleteTask(kitchenTask);
+        saveTask(kitchenTask, false);
+    }
+
+    public static void deleteTask(KitchenTask kitchenTask) {
         PersistenceManager.executeUpdate("DELETE FROM KitchenTasks WHERE id = " + kitchenTask.getId());
-        saveTask(kitchenTask);
+        PersistenceManager.executeUpdate("DELETE FROM CookTask WHERE idTask = " + kitchenTask.getId());
+
     }
 
     public ArrayList<User> getCooks() {
@@ -91,19 +98,19 @@ public class KitchenTask {
     }
 
     public void updateTask(ArrayList<User> cooks) throws UseCaseLogicException {
-        if(cooks == null)
-        {
+        if (cooks == null) {
             this.cooks = null;
             return;
         }
-        if(this.turn == null  && cooks.size() > 0) throw new UseCaseLogicException();
+        if (this.turn == null && cooks.size() > 0) throw new UseCaseLogicException();
         this.cooks = new ArrayList<>(); //removing the previous list of cooks
         addCooks(cooks);
     }
 
     public void updateTask(Turn turn) {
         this.turn = turn;
-        if(cooks != null && turn != null) cooks.removeIf(user -> !turn.isAvailable(user)); //Maybe change a variable in kitchenTaskManager to signal the drop of cooks
+        if (cooks != null && turn != null)
+            cooks.removeIf(user -> !turn.isAvailable(user)); //Maybe change a variable in kitchenTaskManager to signal the drop of cooks
     }
 
     public Turn getTurn() {
@@ -122,8 +129,7 @@ public class KitchenTask {
         return id;
     }
 
-    public static ArrayList<KitchenTask> getAllTasks()
-    {
+    public static ArrayList<KitchenTask> getAllTasks() {
         ArrayList<KitchenTask> ret = new ArrayList<>();
         PersistenceManager.executeQuery("SELECT * " +
                 "FROM KitchenTasks " +
@@ -142,18 +148,18 @@ public class KitchenTask {
                         cooks.add(u);
                     }
                 });
-                Turn turn = Turn.loadTurnById(rs.getInt("idTurn"));
+                Turn turn = rs.getInt("idTurn") == 0 ? null : Turn.loadTurnById(rs.getInt("idTurn"));
                 Procedure p = Recipe.loadRecipeById(rs.getInt("idProcedure"));
                 String durationString = rs.getString("duration");
-                KitchenTask kitchenTask = new KitchenTask(cooks, turn, p,durationString == null ? null : Duration.parse(durationString), rs.getFloat("amount"), idTask);
+                Float amount = rs.getFloat("amount");
+                KitchenTask kitchenTask = new KitchenTask(cooks.size() == 0 ? null : cooks, turn, p, durationString == null ? null : Duration.parse(durationString), amount == 0 ? null : amount, idTask);
                 ret.add(kitchenTask);
             }
         });
         return ret;
     }
 
-    public static int getMaxId()
-    {
+    private static int getMaxId() {
         final Integer[] max = new Integer[1];
         PersistenceManager.executeQuery("SELECT MAX(id) m From KitchenTasks;", new ResultHandler() {
             @Override
@@ -164,19 +170,43 @@ public class KitchenTask {
         return max[0];
     }
 
-    public static void saveTask(KitchenTask kitchenTask) {
+    public static void saveTask(KitchenTask kitchenTask, boolean isNewTask) {
         String turn = kitchenTask.getTurn() == null ? "null" : String.valueOf(kitchenTask.getTurn().getId());
         String procedure = kitchenTask.getProcedure() == null ? "null" : String.valueOf(kitchenTask.getProcedure().getDataBaseId());
-        String time =kitchenTask.getEsteemTime() == null ? "null" : kitchenTask.getEsteemTime().toString();
+        String time = kitchenTask.getEsteemTime() == null ? "null" : "\"" + kitchenTask.getEsteemTime().toString() + "\"";
 
-        String newKitchenTaskUpdate = "INSERT INTO catering.KitchenTasks (idTurn, idProcedure, amount, duration)" +
-                " VALUES (" +  turn +
-                ", " + procedure +
-                ", " + kitchenTask.getAmount() +
-                ", " + time +
-                ");";
-        PersistenceManager.executeUpdate(newKitchenTaskUpdate);
-        kitchenTask.id = getMaxId();
+        if (isNewTask) {
+            String newKitchenTaskUpdate = "INSERT INTO catering.KitchenTasks (idTurn, idProcedure, amount, duration)" +
+                    " VALUES (" + turn +
+                    ", " + procedure +
+                    ", " + kitchenTask.getAmount() +
+                    ", " + time +
+                    ");";
+            PersistenceManager.executeUpdate(newKitchenTaskUpdate);
+            kitchenTask.id = getMaxId();
+            ToDoList.saveNewTask(CatERing.getInstance().getKitchenTaskManager().getCurrentToDoList(), kitchenTask);
+        } else {
+            String newKitchenTaskUpdate = "INSERT INTO catering.KitchenTasks (id, idTurn, idProcedure, amount, duration)" +
+                    " VALUES (" + kitchenTask.getId() +
+                    ", " + turn +
+                    ", " + procedure +
+                    ", " + kitchenTask.getAmount() +
+                    ", " + time +
+                    ");";
+            PersistenceManager.executeUpdate(newKitchenTaskUpdate);
+        }
+
+        //We assume the user is a cook, otherwise would have not come this far
+        if (kitchenTask.cooks != null) {
+            for (User u : kitchenTask.cooks) {
+                String insertionCookTask = "INSERT INTO CookTask (idCook, idTask) VALUES " +
+                        "(" + u.getId() +
+                        ", " + kitchenTask.getId() +
+                        ");";
+                PersistenceManager.executeUpdate(insertionCookTask);
+
+            }
+        }
     }
 
 

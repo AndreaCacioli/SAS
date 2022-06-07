@@ -7,7 +7,7 @@ public interface KitchenTaskEventReceiver {
 
     void updateNewTaskAdded(KitchenTask kitchenTask);
 
-    void updateTaskRemoved();
+    void updateTaskRemoved(KitchenTask kitchenTask);
 
     void updateTaskChanged(KitchenTask kitchenTask);
 }

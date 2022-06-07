@@ -62,15 +62,12 @@ public class Test1 {
             System.out.println(tdl);
 
 
-            System.out.println("TEST AGGIUNGI LAVORO CUOCO");
+            System.out.println("TEST AGGIUNGI LAVORO CUOCO x2");
             TurnTable tt = CatERing.getInstance().getKitchenTaskManager().getTurnTable();
             Turn turn = tt.getTurnById(1);
-
             CatERing.getInstance().getUserManager().fakeLogin("Marinella");
-
             ArrayList<User> cooks = new ArrayList<>();
             cooks.add(CatERing.getInstance().getUserManager().getCurrentUser());
-
             CatERing.getInstance().getUserManager().fakeLogin("Lidia");
 
             //adding everything

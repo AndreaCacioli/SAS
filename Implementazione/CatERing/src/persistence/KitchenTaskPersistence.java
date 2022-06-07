@@ -17,16 +17,16 @@ public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
 
     @Override
     public void updateNewTaskAdded(KitchenTask kitchenTask) {
-        KitchenTask.updateTask(kitchenTask);
+        KitchenTask.saveTask(kitchenTask, true);
     }
 
     @Override
-    public void updateTaskRemoved() {
-        //TODO remove task from db
+    public void updateTaskRemoved(KitchenTask kitchenTask) {
+        KitchenTask.deleteTask(kitchenTask);
     }
 
     @Override
     public void updateTaskChanged(KitchenTask kitchenTask) {
-        //TODO update the task
+        KitchenTask.updateTask(kitchenTask);
     }
 }
