@@ -15,26 +15,14 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>105</x>
+      <x>91</x>
       <y>140</y>
-      <w>217</w>
+      <w>245</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-createProcedure(name)</panel_attributes>
-    <additional_attributes>290.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>392</x>
-      <y>154</y>
-      <w>203</w>
-      <h>35</h>
-    </coordinates>
-    <panel_attributes>p:
-Procedure</panel_attributes>
-    <additional_attributes/>
+assignTime(workTime, totalTime, finishingTime)</panel_attributes>
+    <additional_attributes>310.0;20.0;30.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -67,8 +55,7 @@ Procedure</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>halign=center
-*1 createProcedure*
-lw=0
+*8 assignTime*
 fontsize=20
 </panel_attributes>
     <additional_attributes/>
@@ -167,98 +154,16 @@ throw UseCaseLogicException</panel_attributes>
     <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>490</x>
-      <y>182</y>
-      <w>21</w>
-      <h>182</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>630</x>
-      <y>70</y>
+      <x>637</x>
+      <y>77</y>
       <w>210</w>
       <h>35</h>
     </coordinates>
-    <panel_attributes>procedureManager.procedures:
-ArrayList&lt;Procedure&gt;</panel_attributes>
+    <panel_attributes>procedureManager.currentProcedure:
+Procedure</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>308</x>
-      <y>154</y>
-      <w>98</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-create(name)</panel_attributes>
-    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>490</x>
-      <y>196</y>
-      <w>147</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-this.name = name</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;10.0;70.0;70.0;20.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>490</x>
-      <y>252</y>
-      <w>147</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-this.state = bozza</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;10.0;70.0;70.0;20.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>490</x>
-      <y>196</y>
-      <w>14</w>
-      <h>140</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>315</x>
-      <y>301</y>
-      <w>196</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-p</panel_attributes>
-    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>315</x>
-      <y>378</y>
-      <w>427</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-add(p)</panel_attributes>
-    <additional_attributes>10.0;20.0;590.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -276,12 +181,12 @@ ProcedureManager</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>728</x>
-      <y>98</y>
+      <y>105</y>
       <w>21</w>
-      <h>763</h>
+      <h>756</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1070.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1060.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -289,7 +194,7 @@ ProcedureManager</panel_attributes>
       <x>728</x>
       <y>154</y>
       <w>14</w>
-      <h>294</h>
+      <h>315</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -303,7 +208,7 @@ ProcedureManager</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-p</panel_attributes>
+currentProcedure</panel_attributes>
     <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
   </element>
   <element>
@@ -311,11 +216,11 @@ p</panel_attributes>
     <coordinates>
       <x>315</x>
       <y>476</y>
-      <w>238</w>
+      <w>294</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-notifyNewProcedureCreated(p)</panel_attributes>
+notifyProcedureChanged(currentProcedure)</panel_attributes>
     <additional_attributes>10.0;10.0;110.0;10.0;110.0;70.0;20.0;70.0</additional_attributes>
   </element>
   <element>
@@ -338,14 +243,14 @@ notifyNewProcedureCreated(p)</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-updateNewProcedureCreated(p)</panel_attributes>
+updateProcedureChanged(currentProcedure)</panel_attributes>
     <additional_attributes>10.0;20.0;910.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
       <x>854</x>
-      <y>70</y>
+      <y>77</y>
       <w>210</w>
       <h>35</h>
     </coordinates>
@@ -357,12 +262,12 @@ ProcedureEventReceiver</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>959</x>
-      <y>98</y>
+      <y>105</y>
       <w>21</w>
-      <h>763</h>
+      <h>756</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1070.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1060.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -387,5 +292,54 @@ ProcedureEventReceiver</panel_attributes>
 fg=blue
 </panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>315</x>
+      <y>175</y>
+      <w>427</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+assignTime(workTime, totalTime, finishingTime)</panel_attributes>
+    <additional_attributes>590.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>728</x>
+      <y>189</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+this.workTime = workTime
+</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;70.0;20.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>728</x>
+      <y>245</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+this.totalTime = totalTime</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;70.0;20.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>728</x>
+      <y>301</y>
+      <w>224</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+this.finishingTime = finishingTime</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;70.0;20.0;70.0</additional_attributes>
   </element>
 </diagram>
