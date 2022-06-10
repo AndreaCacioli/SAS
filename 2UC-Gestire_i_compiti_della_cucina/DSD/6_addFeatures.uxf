@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>8</zoom_level>
+  <zoom_level>5</zoom_level>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>88</x>
-      <y>104</y>
-      <w>24</w>
-      <h>816</h>
+      <x>240</x>
+      <y>145</y>
+      <w>15</w>
+      <h>510</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1000.0</additional_attributes>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>232</x>
-      <y>72</y>
-      <w>232</w>
-      <h>40</h>
+      <x>330</x>
+      <y>125</y>
+      <w>145</w>
+      <h>25</h>
     </coordinates>
     <panel_attributes>kitchenTaskManager:
 KitchenTaskManager</panel_attributes>
@@ -27,10 +27,10 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>344</x>
-      <y>104</y>
-      <w>24</w>
-      <h>816</h>
+      <x>400</x>
+      <y>145</y>
+      <w>15</w>
+      <h>510</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1000.0</additional_attributes>
@@ -38,10 +38,10 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>64</x>
-      <y>56</y>
-      <w>72</w>
-      <h>56</h>
+      <x>225</x>
+      <y>115</y>
+      <w>45</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -49,10 +49,10 @@ KitchenTaskManager</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>0</y>
-      <w>272</w>
-      <h>32</h>
+      <x>455</x>
+      <y>80</y>
+      <w>170</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>halign=center
 *6 addFeatures*
@@ -64,10 +64,10 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>88</x>
-      <y>160</y>
-      <w>272</w>
-      <h>32</h>
+      <x>240</x>
+      <y>180</y>
+      <w>170</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 addFeatures(kitchenTask,esteemTime?,amount?)</panel_attributes>
@@ -76,10 +76,10 @@ addFeatures(kitchenTask,esteemTime?,amount?)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>344</x>
-      <y>176</y>
-      <w>16</w>
-      <h>680</h>
+      <x>400</x>
+      <y>190</y>
+      <w>10</w>
+      <h>425</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -87,10 +87,10 @@ addFeatures(kitchenTask,esteemTime?,amount?)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>344</x>
-      <y>184</y>
-      <w>416</w>
-      <h>32</h>
+      <x>400</x>
+      <y>195</y>
+      <w>260</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 addFeatures(kitchenTask,esteemTime?,amount?)</panel_attributes>
@@ -99,10 +99,10 @@ addFeatures(kitchenTask,esteemTime?,amount?)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>744</x>
-      <y>200</y>
-      <w>16</w>
-      <h>392</h>
+      <x>650</x>
+      <y>205</y>
+      <w>10</w>
+      <h>245</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -110,10 +110,10 @@ addFeatures(kitchenTask,esteemTime?,amount?)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>640</x>
-      <y>72</y>
-      <w>232</w>
-      <h>40</h>
+      <x>585</x>
+      <y>125</y>
+      <w>145</w>
+      <h>25</h>
     </coordinates>
     <panel_attributes>kitchenTaskManager.currentToDoList:
 ToDoList</panel_attributes>
@@ -122,10 +122,10 @@ ToDoList</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
-      <y>104</y>
-      <w>24</w>
-      <h>816</h>
+      <x>650</x>
+      <y>145</y>
+      <w>15</w>
+      <h>510</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1000.0</additional_attributes>
@@ -133,10 +133,10 @@ ToDoList</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>376</x>
-      <y>232</y>
-      <w>632</w>
-      <h>328</h>
+      <x>420</x>
+      <y>225</y>
+      <w>395</w>
+      <h>205</h>
     </coordinates>
     <panel_attributes>LOOP for all KitchenTask kt in kitchenTaskManager.currentToDoList.tasks
 fg=blue
@@ -146,36 +146,36 @@ fg=blue
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
-      <y>312</y>
-      <w>256</w>
-      <h>88</h>
+      <x>650</x>
+      <y>270</y>
+      <w>195</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-this.esteemTime = esteemTime</panel_attributes>
-    <additional_attributes>10.0;10.0;90.0;10.0;90.0;90.0;20.0;90.0</additional_attributes>
+setDuration(esteemTime)</panel_attributes>
+    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
-      <y>400</y>
-      <w>208</w>
-      <h>88</h>
+      <x>650</x>
+      <y>325</y>
+      <w>195</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-this.amount = amount</panel_attributes>
-    <additional_attributes>10.0;10.0;90.0;10.0;90.0;90.0;20.0;90.0</additional_attributes>
+setAmount(amount)</panel_attributes>
+    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>384</x>
-      <y>272</y>
-      <w>616</w>
-      <h>248</h>
+      <x>425</x>
+      <y>250</y>
+      <w>385</w>
+      <h>155</h>
     </coordinates>
-    <panel_attributes>OPT kt.getProcedure().getName().compareTo(kitchenTask.getProcedure().getName())
+    <panel_attributes>OPT kt == kitchenTask
 fg=#128C86
 </panel_attributes>
     <additional_attributes/>
@@ -183,10 +183,10 @@ fg=#128C86
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
-      <y>120</y>
-      <w>1352</w>
-      <h>784</h>
+      <x>185</x>
+      <y>155</y>
+      <w>845</w>
+      <h>490</h>
     </coordinates>
     <panel_attributes>alt 
 fg=#761C8C
@@ -263,10 +263,10 @@ fontsize=11
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>88</x>
-      <y>824</y>
-      <w>280</w>
-      <h>32</h>
+      <x>240</x>
+      <y>595</y>
+      <w>175</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -275,10 +275,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1072</x>
-      <y>72</y>
-      <w>232</w>
-      <h>40</h>
+      <x>885</x>
+      <y>125</y>
+      <w>145</w>
+      <h>25</h>
     </coordinates>
     <panel_attributes>kitchenTaskEventReceiver:
 KitchenTaskEventReceiver</panel_attributes>
@@ -287,10 +287,10 @@ KitchenTaskEventReceiver</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1184</x>
-      <y>752</y>
-      <w>16</w>
-      <h>24</h>
+      <x>955</x>
+      <y>550</y>
+      <w>10</w>
+      <h>15</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -298,10 +298,10 @@ KitchenTaskEventReceiver</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1184</x>
-      <y>104</y>
-      <w>24</w>
-      <h>816</h>
+      <x>955</x>
+      <y>145</y>
+      <w>15</w>
+      <h>510</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1000.0</additional_attributes>
@@ -309,10 +309,10 @@ KitchenTaskEventReceiver</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>352</x>
-      <y>680</y>
-      <w>16</w>
-      <h>88</h>
+      <x>405</x>
+      <y>505</y>
+      <w>10</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -320,10 +320,10 @@ KitchenTaskEventReceiver</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>648</y>
-      <w>256</w>
-      <h>48</h>
+      <x>405</x>
+      <y>485</y>
+      <w>160</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 notifyTaskChanged(kitchenTask)</panel_attributes>
@@ -332,22 +332,22 @@ notifyTaskChanged(kitchenTask)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
-      <y>736</y>
-      <w>848</w>
-      <h>32</h>
+      <x>410</x>
+      <y>540</y>
+      <w>560</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 updateTaskChanged(kitchenTask)</panel_attributes>
-    <additional_attributes>10.0;20.0;1040.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;1100.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>128</x>
-      <y>696</y>
-      <w>1120</w>
-      <h>88</h>
+      <x>265</x>
+      <y>515</y>
+      <w>705</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>LOOP for each
 kitchenTaskEventReceiver in receivers
@@ -357,10 +357,10 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>88</x>
-      <y>784</y>
-      <w>272</w>
-      <h>32</h>
+      <x>240</x>
+      <y>570</y>
+      <w>170</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 currentToDoList</panel_attributes>
@@ -369,13 +369,82 @@ currentToDoList</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
-      <y>568</y>
-      <w>408</w>
-      <h>32</h>
+      <x>405</x>
+      <y>435</y>
+      <w>255</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 currentToDoList</panel_attributes>
     <additional_attributes>10.0;20.0;490.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>745</x>
+      <y>125</y>
+      <w>135</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>kitchenTask:
+KitchenTask</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>835</x>
+      <y>145</y>
+      <w>15</w>
+      <h>510</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1000.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>835</x>
+      <y>275</y>
+      <w>10</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>835</x>
+      <y>280</y>
+      <w>145</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+this.esteemTime = esteemTime</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0;60.0;70.0;20.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>835</x>
+      <y>335</y>
+      <w>10</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>835</x>
+      <y>335</y>
+      <w>120</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+this.amount = amount</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;70.0;20.0;70.0</additional_attributes>
   </element>
 </diagram>
