@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<diagram program="umlet" version="15.0.0">
   <zoom_level>5</zoom_level>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>215</x>
+      <x>110</x>
       <y>75</y>
       <w>15</w>
       <h>915</h>
@@ -15,7 +15,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>215</x>
+      <x>110</x>
       <y>100</y>
       <w>155</w>
       <h>20</h>
@@ -27,7 +27,7 @@ copyProcedure(name)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>480</x>
+      <x>375</x>
       <y>110</y>
       <w>145</w>
       <h>25</h>
@@ -39,7 +39,7 @@ Procedure</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>360</x>
+      <x>255</x>
       <y>110</y>
       <w>10</w>
       <h>825</h>
@@ -50,7 +50,7 @@ Procedure</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>200</x>
+      <x>95</x>
       <y>45</y>
       <w>45</w>
       <h>35</h>
@@ -61,7 +61,7 @@ Procedure</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
+      <x>275</x>
       <y>0</y>
       <w>170</w>
       <h>20</h>
@@ -76,7 +76,7 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>255</x>
       <y>70</y>
       <w>15</w>
       <h>920</h>
@@ -87,7 +87,7 @@ fontsize=20
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>140</x>
+      <x>35</x>
       <y>85</y>
       <w>1615</w>
       <h>895</h>
@@ -203,7 +203,7 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
+      <x>105</x>
       <y>910</y>
       <w>160</w>
       <h>20</h>
@@ -215,7 +215,7 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>255</x>
       <y>110</y>
       <w>130</w>
       <h>20</h>
@@ -227,7 +227,7 @@ create(currentProcedure,name)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>290</x>
+      <x>185</x>
       <y>55</y>
       <w>150</w>
       <h>25</h>
@@ -239,7 +239,7 @@ ProcedureManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>215</x>
+      <x>110</x>
       <y>880</y>
       <w>160</w>
       <h>20</h>
@@ -251,7 +251,7 @@ q</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>130</y>
       <w>15</w>
       <h>860</h>
@@ -262,7 +262,7 @@ q</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>140</y>
       <w>10</w>
       <h>495</h>
@@ -273,7 +273,7 @@ q</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>150</y>
       <w>140</w>
       <h>35</h>
@@ -285,7 +285,7 @@ this.name = name +"-copia"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>180</y>
       <w>110</w>
       <h>40</h>
@@ -297,7 +297,7 @@ this.state = "bozza"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>215</y>
       <w>175</w>
       <h>40</h>
@@ -309,7 +309,7 @@ this.author = currentProcedure.author</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>250</y>
       <w>205</w>
       <h>40</h>
@@ -321,7 +321,7 @@ this.description = currentProcedure.description</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>285</y>
       <w>160</w>
       <h>40</h>
@@ -333,7 +333,7 @@ this.note = currentProcedure.note</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>320</y>
       <w>150</w>
       <h>40</h>
@@ -345,7 +345,7 @@ this.tag = currentProcedure.tag</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>355</y>
       <w>225</w>
       <h>40</h>
@@ -357,7 +357,7 @@ this.finishingTime = currentProcedure.finishingTime</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>390</y>
       <w>195</w>
       <h>40</h>
@@ -369,7 +369,7 @@ this.totalTime = currentProcedure.totalTime</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>425</y>
       <w>195</w>
       <h>40</h>
@@ -381,7 +381,7 @@ this.workTime = currentProcedure.workTime</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>940</x>
+      <x>835</x>
       <y>50</y>
       <w>100</w>
       <h>25</h>
@@ -393,7 +393,7 @@ ArrayList&lt;Instruction&gt;</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>820</x>
+      <x>715</x>
       <y>50</y>
       <w>110</w>
       <h>25</h>
@@ -405,7 +405,7 @@ ArrayList&lt;Instruction&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>985</x>
+      <x>880</x>
       <y>70</y>
       <w>15</w>
       <h>920</h>
@@ -416,7 +416,7 @@ ArrayList&lt;Instruction&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>895</x>
+      <x>790</x>
       <y>70</y>
       <w>15</w>
       <h>920</h>
@@ -427,7 +427,7 @@ ArrayList&lt;Instruction&gt;</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>415</x>
+      <x>310</x>
       <y>485</y>
       <w>255</w>
       <h>30</h>
@@ -440,7 +440,7 @@ fg=#128C86
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>415</x>
+      <x>310</x>
       <y>520</y>
       <w>255</w>
       <h>30</h>
@@ -453,7 +453,7 @@ fg=#128C86
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>410</x>
+      <x>305</x>
       <y>460</y>
       <w>270</w>
       <h>105</h>
@@ -466,7 +466,7 @@ fg=blue
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>530</y>
       <w>450</w>
       <h>20</h>
@@ -478,7 +478,7 @@ add(i)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>495</y>
       <w>360</w>
       <h>20</h>
@@ -490,7 +490,7 @@ add(i)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>895</x>
+      <x>790</x>
       <y>505</y>
       <w>10</w>
       <h>30</h>
@@ -501,7 +501,7 @@ add(i)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>985</x>
+      <x>880</x>
       <y>540</y>
       <w>10</w>
       <h>30</h>
@@ -512,7 +512,7 @@ add(i)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>545</x>
+      <x>440</x>
       <y>565</y>
       <w>110</w>
       <h>40</h>
@@ -524,7 +524,7 @@ this.owner = user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1060</x>
+      <x>955</x>
       <y>50</y>
       <w>190</w>
       <h>25</h>
@@ -535,7 +535,7 @@ this.owner = user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1255</x>
+      <x>1150</x>
       <y>50</y>
       <w>190</w>
       <h>25</h>
@@ -547,7 +547,7 @@ CookBook</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1340</x>
+      <x>1235</x>
       <y>70</y>
       <w>15</w>
       <h>920</h>
@@ -558,7 +558,7 @@ CookBook</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1450</x>
+      <x>1345</x>
       <y>50</y>
       <w>190</w>
       <h>25</h>
@@ -570,7 +570,7 @@ ProcedureEventReceiver</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1540</x>
+      <x>1435</x>
       <y>70</y>
       <w>15</w>
       <h>920</h>
@@ -581,7 +581,7 @@ ProcedureEventReceiver</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>225</x>
+      <x>120</x>
       <y>835</y>
       <w>1370</w>
       <h>45</h>
@@ -593,7 +593,7 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1150</x>
+      <x>1045</x>
       <y>70</y>
       <w>15</w>
       <h>915</h>
@@ -604,7 +604,7 @@ fg=blue</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1150</x>
+      <x>1045</x>
       <y>735</y>
       <w>10</w>
       <h>30</h>
@@ -615,7 +615,7 @@ fg=blue</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1340</x>
+      <x>1235</x>
       <y>775</y>
       <w>10</w>
       <h>30</h>
@@ -626,7 +626,7 @@ fg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>255</x>
       <y>765</y>
       <w>990</w>
       <h>20</h>
@@ -638,7 +638,7 @@ add(q)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>365</x>
+      <x>260</x>
       <y>745</y>
       <w>795</w>
       <h>20</h>
@@ -650,7 +650,7 @@ cookBook</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>255</x>
       <y>725</y>
       <w>800</w>
       <h>20</h>
@@ -662,7 +662,7 @@ getInstance()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1650</x>
+      <x>1545</x>
       <y>50</y>
       <w>170</w>
       <h>25</h>
@@ -674,7 +674,7 @@ ArrayList&lt;Procedure&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1675</x>
+      <x>1570</x>
       <y>70</y>
       <w>15</w>
       <h>920</h>
@@ -685,7 +685,7 @@ ArrayList&lt;Procedure&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1340</x>
+      <x>1235</x>
       <y>775</y>
       <w>345</w>
       <h>20</h>
@@ -697,7 +697,7 @@ add(q)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1675</x>
+      <x>1570</x>
       <y>785</y>
       <w>10</w>
       <h>30</h>
@@ -708,31 +708,31 @@ add(q)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>255</x>
       <y>785</y>
-      <w>150</w>
+      <w>145</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-notifyCreatedNewPreparation(q)</panel_attributes>
+notifyNewProcedureCreated(q)</panel_attributes>
     <additional_attributes>10.0;10.0;60.0;10.0;60.0;70.0;30.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>370</x>
+      <x>265</x>
       <y>850</y>
       <w>1180</w>
       <h>20</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-updateCreatedNewPreparation(q)</panel_attributes>
+updateNewProcedureCreated(q)</panel_attributes>
     <additional_attributes>10.0;20.0;2340.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1540</x>
+      <x>1435</x>
       <y>860</y>
       <w>10</w>
       <h>20</h>
@@ -743,7 +743,7 @@ updateCreatedNewPreparation(q)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>365</x>
+      <x>260</x>
       <y>610</y>
       <w>195</w>
       <h>20</h>
@@ -755,7 +755,7 @@ q</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>370</x>
+      <x>265</x>
       <y>820</y>
       <w>10</w>
       <h>60</h>

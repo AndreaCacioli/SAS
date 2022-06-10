@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
-  <zoom_level>7</zoom_level>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>6</zoom_level>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>105</x>
-      <y>105</y>
-      <w>21</w>
-      <h>756</h>
+      <x>282</x>
+      <y>138</y>
+      <w>18</w>
+      <h>648</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1060.0</additional_attributes>
@@ -15,22 +15,22 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>91</x>
-      <y>140</y>
-      <w>245</w>
-      <h>28</h>
+      <x>282</x>
+      <y>168</y>
+      <w>270</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 assignTime(workTime, totalTime, finishingTime)</panel_attributes>
-    <additional_attributes>310.0;20.0;30.0;20.0</additional_attributes>
+    <additional_attributes>430.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>308</x>
-      <y>154</y>
-      <w>14</w>
-      <h>630</h>
+      <x>540</x>
+      <y>180</y>
+      <w>12</w>
+      <h>540</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -38,10 +38,10 @@ assignTime(workTime, totalTime, finishingTime)</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>84</x>
-      <y>63</y>
-      <w>63</w>
-      <h>49</h>
+      <x>264</x>
+      <y>102</y>
+      <w>54</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -49,10 +49,10 @@ assignTime(workTime, totalTime, finishingTime)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>336</x>
-      <y>0</y>
-      <w>238</w>
-      <h>28</h>
+      <x>480</x>
+      <y>48</y>
+      <w>204</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>halign=center
 *8 assignTime*
@@ -63,10 +63,10 @@ fontsize=20
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>308</x>
-      <y>98</y>
-      <w>21</w>
-      <h>763</h>
+      <x>540</x>
+      <y>132</y>
+      <w>18</w>
+      <h>654</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1070.0</additional_attributes>
@@ -74,10 +74,10 @@ fontsize=20
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
-      <y>119</y>
-      <w>1050</w>
-      <h>728</h>
+      <x>192</x>
+      <y>150</y>
+      <w>900</w>
+      <h>624</h>
     </coordinates>
     <panel_attributes>ALT[(user.isCook() || user.isChef()) &amp;&amp; !recipeManager.getRecipeNames().contains(name) ]
 fg=#761C8C
@@ -144,22 +144,22 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>105</x>
-      <y>763</y>
-      <w>224</w>
-      <h>28</h>
+      <x>282</x>
+      <y>702</y>
+      <w>270</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
-    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;430.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>637</x>
-      <y>77</y>
-      <w>210</w>
-      <h>35</h>
+      <x>738</x>
+      <y>114</y>
+      <w>180</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>procedureManager.currentProcedure:
 Procedure</panel_attributes>
@@ -168,10 +168,10 @@ Procedure</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>210</x>
-      <y>77</y>
-      <w>210</w>
-      <h>35</h>
+      <x>456</x>
+      <y>114</y>
+      <w>180</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>procedureManager:
 ProcedureManager</panel_attributes>
@@ -180,10 +180,10 @@ ProcedureManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>728</x>
-      <y>105</y>
-      <w>21</w>
-      <h>756</h>
+      <x>816</x>
+      <y>138</y>
+      <w>18</w>
+      <h>648</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1060.0</additional_attributes>
@@ -191,10 +191,10 @@ ProcedureManager</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>728</x>
-      <y>154</y>
-      <w>14</w>
-      <h>315</h>
+      <x>816</x>
+      <y>180</y>
+      <w>12</w>
+      <h>270</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -202,22 +202,22 @@ ProcedureManager</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>105</x>
-      <y>665</y>
-      <w>224</w>
-      <h>28</h>
+      <x>282</x>
+      <y>618</y>
+      <w>270</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 currentProcedure</panel_attributes>
-    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;430.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>315</x>
-      <y>476</y>
-      <w>294</w>
-      <h>63</h>
+      <x>546</x>
+      <y>456</y>
+      <w>252</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 notifyProcedureChanged(currentProcedure)</panel_attributes>
@@ -226,10 +226,10 @@ notifyProcedureChanged(currentProcedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>315</x>
-      <y>518</y>
-      <w>14</w>
-      <h>42</h>
+      <x>546</x>
+      <y>492</y>
+      <w>12</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -237,22 +237,22 @@ notifyProcedureChanged(currentProcedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>322</x>
-      <y>532</y>
-      <w>651</w>
-      <h>28</h>
+      <x>552</x>
+      <y>504</y>
+      <w>474</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 updateProcedureChanged(currentProcedure)</panel_attributes>
-    <additional_attributes>10.0;20.0;910.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;770.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>854</x>
-      <y>77</y>
-      <w>210</w>
-      <h>35</h>
+      <x>924</x>
+      <y>114</y>
+      <w>180</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>procedureEventReceiver:
 ProcedureEventReceiver</panel_attributes>
@@ -261,10 +261,10 @@ ProcedureEventReceiver</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>959</x>
-      <y>105</y>
-      <w>21</w>
-      <h>756</h>
+      <x>1014</x>
+      <y>138</y>
+      <w>18</w>
+      <h>648</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1060.0</additional_attributes>
@@ -272,10 +272,10 @@ ProcedureEventReceiver</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>959</x>
-      <y>546</y>
-      <w>14</w>
-      <h>42</h>
+      <x>1014</x>
+      <y>516</y>
+      <w>12</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -283,10 +283,10 @@ ProcedureEventReceiver</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>140</x>
-      <y>532</y>
-      <w>875</w>
-      <h>77</h>
+      <x>312</x>
+      <y>504</y>
+      <w>750</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>LOOP all ProcedureEventReceiver in receivers
 fg=blue
@@ -296,22 +296,22 @@ fg=blue
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>315</x>
-      <y>175</y>
-      <w>427</w>
-      <h>28</h>
+      <x>546</x>
+      <y>198</y>
+      <w>282</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 assignTime(workTime, totalTime, finishingTime)</panel_attributes>
-    <additional_attributes>590.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>450.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>728</x>
-      <y>189</y>
-      <w>189</w>
-      <h>63</h>
+      <x>816</x>
+      <y>210</y>
+      <w>162</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.workTime = workTime
@@ -321,10 +321,10 @@ this.workTime = workTime
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>728</x>
-      <y>245</y>
-      <w>189</w>
-      <h>63</h>
+      <x>816</x>
+      <y>258</y>
+      <w>162</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.totalTime = totalTime</panel_attributes>
@@ -333,10 +333,10 @@ this.totalTime = totalTime</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>728</x>
-      <y>301</y>
-      <w>224</w>
-      <h>63</h>
+      <x>816</x>
+      <y>306</y>
+      <w>192</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.finishingTime = finishingTime</panel_attributes>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<diagram program="umlet" version="15.0.0">
   <help_text>x// Uncomment the following line to change the fontsize and font:
 // fontsize=14
 // fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
@@ -207,7 +207,7 @@ SimpleInstruction</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-createVariant(instruction,indication,ingredients)</panel_attributes>
+create(instruction,indication,ingredients)</panel_attributes>
     <additional_attributes>320.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -285,11 +285,11 @@ BasicInstruction</panel_attributes>
     <coordinates>
       <x>924</x>
       <y>91</y>
-      <w>28</w>
+      <w>21</w>
       <h>833</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;20.0;1170.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1170.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
