@@ -44,9 +44,9 @@ fg=blue</panel_attributes>
     <id>UMLPackage</id>
     <coordinates>
       <x>1596</x>
-      <y>468</y>
-      <w>876</w>
-      <h>714</h>
+      <y>390</y>
+      <w>936</w>
+      <h>792</h>
     </coordinates>
     <panel_attributes>RecipeManagement
 fg=magenta</panel_attributes>
@@ -150,14 +150,15 @@ fg=blue</panel_attributes>
     <coordinates>
       <x>1632</x>
       <y>1050</y>
-      <w>72</w>
-      <h>42</h>
+      <w>216</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>Recipe
 fg=magenta
 --
 -name: String
---</panel_attributes>
+--
++addUsedPreparations(prep: Preparation): Void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -358,6 +359,7 @@ fg=blue</panel_attributes>
 
 --
 +isChef( ): boolean
++isCook( ): boolean
 
 
 fg=blue</panel_attributes>
@@ -394,32 +396,45 @@ fg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1626</x>
-      <y>1110</y>
-      <w>192</w>
-      <h>54</h>
+      <x>1608</x>
+      <y>426</y>
+      <w>474</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>ProcedureManager
 --
 
 --
-
+*event sender methods*
++notifyNewProcedureCreated(p: Procedure)
++notifyAddedUsedPrepration(recipe: Recipe)
++notifyInstructionChanged(instruction: Instruction)
++notifyProcedureChanged(p: Procedure)
+--
+*operations methods*
++createProcedure(name: String): Procedure
++createProcedure(instructions: ArrayList&lt;Instruction&gt;)
++createVariant(instruciton: BasicInstruction, indication: String, ingredients: IngredientQuantity): SimpleInstruction
++copyProcedure(name: String): Procedure
++getCurrentProcedure(): Procedure
++markDownTag(tag: String): Procedure
++assignTime(workTime: Duration, totalTime: Duration, FinishingTime: Duration): Procedure
 fg=magenta</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1740</x>
-      <y>804</y>
-      <w>60</w>
-      <h>318</h>
+      <x>1644</x>
+      <y>588</y>
+      <w>90</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-m2=0..n
-procedures
+m2=0..1
+currentProcedure
 fg=magenta</panel_attributes>
-    <additional_attributes>10.0;510.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -823,25 +838,26 @@ fg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1866</x>
+      <x>2010</x>
       <y>678</y>
-      <w>114</w>
+      <w>204</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>Prepartion
 fg=magenta
 --
 
---</panel_attributes>
+--
++create(instructions: ArrayList&lt;Instruction&gt;)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1638</x>
+      <x>1608</x>
       <y>672</y>
-      <w>156</w>
-      <h>138</h>
+      <w>372</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>Procedure
 {abstract}
@@ -857,7 +873,11 @@ fg=magenta
 -totalTime: Duration
 -finishingTime: Duration
 -amount: Float
---</panel_attributes>
+--
++create(name: String)
++create(name: String, procedure: Procedure)
++markDownTag(tag: String): Void
++assignTime(workTime: Duration, totalTime: Duration, FinishingTime: Duration): Void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -865,45 +885,45 @@ fg=magenta
     <coordinates>
       <x>1158</x>
       <y>678</y>
-      <w>492</w>
+      <w>462</w>
       <h>156</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=1
 procedure
 fg=red</panel_attributes>
-    <additional_attributes>800.0;10.0;500.0;10.0;500.0;240.0;10.0;240.0</additional_attributes>
+    <additional_attributes>750.0;10.0;500.0;10.0;500.0;240.0;10.0;240.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1788</x>
+      <x>1974</x>
       <y>690</y>
-      <w>90</w>
+      <w>48</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;
 fg=magenta
 </panel_attributes>
-    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>1686</x>
-      <y>804</y>
+      <y>846</y>
       <w>18</w>
-      <h>258</h>
+      <h>216</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;
 fg=magenta
 </panel_attributes>
-    <additional_attributes>10.0;410.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;340.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1908</x>
+      <x>2124</x>
       <y>768</y>
       <w>204</w>
       <h>96</h>
@@ -914,15 +934,17 @@ fg=magenta
 --
 -CookBook()
 +getInstance(): CookBook {static}
++getRecipeNames(): ArrayList&lt;String&gt; {static}
++add(p: Procedure): Void
 fg=magenta</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1788</x>
+      <x>1974</x>
       <y>762</y>
-      <w>132</w>
+      <w>162</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
@@ -930,13 +952,13 @@ m2=0..n
 procedures
 fg=magenta
 </panel_attributes>
-    <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2148</x>
-      <y>504</y>
+      <x>2400</x>
+      <y>510</y>
       <w>114</w>
       <h>60</h>
     </coordinates>
@@ -950,7 +972,7 @@ fg=magenta
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2148</x>
+      <x>2220</x>
       <y>612</y>
       <w>192</w>
       <h>72</h>
@@ -967,22 +989,22 @@ fg=magenta
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2202</x>
-      <y>558</y>
-      <w>60</w>
-      <h>66</h>
+      <x>2406</x>
+      <y>564</y>
+      <w>84</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m2=1
 ingredient
 fg=magenta
 </panel_attributes>
-    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;90.0;110.0;90.0;110.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1698</x>
+      <x>1842</x>
       <y>732</y>
       <w>210</w>
       <h>342</h>
@@ -1023,7 +1045,8 @@ fg=magenta
 fg=magenta
 --
 
---</panel_attributes>
+--
++setAlternative(bi: BasicInstruction): Void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -1057,22 +1080,23 @@ fg=magenta
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1992</x>
+      <x>1860</x>
       <y>1098</y>
-      <w>156</w>
+      <w>366</w>
       <h>54</h>
     </coordinates>
     <panel_attributes>SimpleInstruction
 fg=magenta
 --
 -indication: String
---</panel_attributes>
+--
++create(instruciton: BasicInstruction, indication: String, ingredients: IngredientQuantity)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2166</x>
+      <x>2232</x>
       <y>1098</y>
       <w>156</w>
       <h>54</h>
@@ -1100,15 +1124,15 @@ fg=magenta
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2190</x>
-      <y>1062</y>
-      <w>18</w>
-      <h>48</h>
+      <x>2232</x>
+      <y>1050</y>
+      <w>36</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;
 fg=magenta
 </panel_attributes>
-    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+    <additional_attributes>40.0;80.0;40.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -1141,47 +1165,47 @@ fg=magenta
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2310</x>
+      <x>2328</x>
       <y>678</y>
-      <w>66</w>
-      <h>258</h>
+      <w>84</w>
+      <h>276</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m2=1..n
 ingredients
 fg=magenta
 </panel_attributes>
-    <additional_attributes>10.0;410.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;430.0;100.0;430.0;100.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1788</x>
-      <y>792</y>
-      <w>402</w>
-      <h>162</h>
+      <x>1818</x>
+      <y>846</y>
+      <w>372</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m2=0..n
 preemptiveInstructions
 fg=magenta
 </panel_attributes>
-    <additional_attributes>10.0;10.0;60.0;10.0;60.0;240.0;650.0;240.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0;600.0;150.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1788</x>
-      <y>804</y>
-      <w>402</w>
-      <h>180</h>
+      <x>1746</x>
+      <y>846</y>
+      <w>444</w>
+      <h>138</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m2=0..n
 inPlaceInstructions
 fg=magenta
 </panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;270.0;650.0;270.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;200.0;720.0;200.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1196,7 +1220,7 @@ m2=1
 owner
 fg=magenta
 </panel_attributes>
-    <additional_attributes>240.0;10.0;10.0;10.0;10.0;830.0;260.0;830.0</additional_attributes>
+    <additional_attributes>190.0;10.0;10.0;10.0;10.0;830.0;260.0;830.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -1255,10 +1279,10 @@ fg=red</panel_attributes>
 --
 
 --
-/+updateNewListCreated(tdl: ToDoList): Void/
-/+updateListEmptied(tdl: ToDoList): Void/
-/+updateNewTaskAdded(kitchenTask: KitchenTask): Void/
-/+updateTaskRemoved(kitchenTask: KitchenTask): Void/
+/+updateNewListCreated(tdl: ToDoList)/
+/+updateListEmptied(tdl: ToDoList)/
+/+updateNewTaskAdded(kitchenTask: KitchenTask)/
+/+updateTaskRemoved(kitchenTask: KitchenTask)/
 /+updateTaskChanged(kitchenTask: KitchenTask): Void/
 
 fg=red</panel_attributes>
@@ -1316,5 +1340,39 @@ m1=0..1
 menù
 fg=blue</panel_attributes>
     <additional_attributes>10.0;430.0;420.0;430.0;420.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2142</x>
+      <y>498</y>
+      <w>228</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>ProcedureEventReceiver
+{interface}
+--
+
+--
+/+updateNewProcedureCreated(p: Procedure)/
+/+updateAddedUsedPrepration(recipe: Recipe)/
+/+updateInstructionChanged(instruction: Instruction)/
+/+updateProcedureChanged(p: Procedure)/
+fg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2076</x>
+      <y>444</y>
+      <w>132</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+receivers
+m1=0..n
+fg=magenta</panel_attributes>
+    <additional_attributes>140.0;90.0;140.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
