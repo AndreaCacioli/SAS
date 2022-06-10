@@ -19,7 +19,6 @@ import java.util.Comparator;
 public class KitchenTaskManager {
 
     ToDoList currentToDoList;
-
     ArrayList<KitchenTaskEventReceiver> receivers;
 
     public KitchenTaskManager() {

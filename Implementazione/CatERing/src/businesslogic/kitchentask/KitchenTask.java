@@ -19,6 +19,9 @@ public class KitchenTask {
     private ArrayList<User> cooks;
     private Turn turn;
     private Procedure procedure;
+    private Duration esteemTime;
+    private Float amount;
+    private int id;
 
     public KitchenTask(ArrayList<User> cooks, Turn turn, Procedure procedure, Duration esteemTime, Float amount, int id) {
         this.cooks = cooks;
@@ -29,9 +32,7 @@ public class KitchenTask {
         this.id = id;
     }
 
-    private Duration esteemTime;
-    private Float amount;
-    private int id;
+
 
     public KitchenTask(MenuItem item) {
         this.procedure = item.getItemRecipe();

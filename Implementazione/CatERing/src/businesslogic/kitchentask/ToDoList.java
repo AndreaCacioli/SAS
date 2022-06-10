@@ -85,7 +85,7 @@ public class ToDoList {
 
     public ToDoList addFeatures(KitchenTask kitchenTask, Duration esteemTime, Float amount) {
         for (KitchenTask kt : tasks) {
-            if (kt.getProcedure().getName().compareTo(kitchenTask.getProcedure().getName()) == 0) {
+            if (kt.getId() == kitchenTask.getId()) {
                 kt.setDuration(esteemTime);
                 kt.setAmount(amount);
                 break;
